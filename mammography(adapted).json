@@ -1,0 +1,2098 @@
+[
+    {
+        "id": "A",
+        "topic_input": "Familienanamnese",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "B",
+        "topic_input": "Verwandschaftsgrad bei positiver Familienanamnese",
+        "condition": "A==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Mutter"
+            },
+            {
+                "id": "b",
+                "value": "Tante"
+            },
+            {
+                "id": "c",
+                "value": "Grossmutter"
+            },
+            {
+                "id": "d",
+                "value": "Schwester"
+            },
+            {
+                "id": "e",
+                "value": "andere"
+            },
+            {
+                "id": "f",
+                "value": "unklar"
+            }
+        ]
+    },
+    {
+        "id": "C",
+        "topic_input": "Bekannter Brustkrebs",
+        "condition": "",
+        "prompt": "CLASSIFICATION TASK: Evaluate the provided German mammography report [TEXT] to ascertain whether the patient had a previously diagnosed breast cancer. Select 'ja' if the report clearly indicates a known breast cancer diagnosis prior to the mammography, 'nein' if it explicitly states the absence of a prior diagnosis, and 'nicht erwähnt' if no relevant information is mentioned. Please provide the most accurate classification based solely on the report's content.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "D",
+        "topic_input": "Seite des bekannten Brustkrebs",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the side of the previously diagnosed breast cancer. Focus on specific terms, phrases, or descriptions that may indicate the cancer's location. Ignore patient data and unrelated medical information. QUESTION: In the following mammography report, on which side is the known breast cancer located, if mentioned or implied: [TEXT]? ANSWER: The known breast cancer is located on the",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "E",
+        "topic_input": "Vorherige Bestrahlung",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. Was there a previous radiotherapy conducted? Yes ('ja') or No ('nein'). If nothing is mentioned, the answer is not mentioned ('nicht erwähnt'). ANSWER: The correct answer for this report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "F",
+        "topic_input": "Vorherige Chemotherapie",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "G",
+        "topic_input": "Vorherige Operation",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "H",
+        "topic_input": "Bekannter Brustkrebs2",
+        "condition": "C==a",
+        "prompt": "Classify the provided German mammography report [TEXT] into one of the following categories regarding the topic 'Bekannter Brustkrebs2': ja (yes, known breast cancer) or nein (no, no known breast cancer). Choose the most accurate category based solely on the information contained within the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "I",
+        "topic_input": "Seite des bekannten Brustkrebs2",
+        "condition": "H==a",
+        "prompt": "Classify the mammography report according to the side of the known breast cancer. Choose from the following categories: left, right, not mentioned. Classify the text: [TEXT]",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "J",
+        "topic_input": "Vorherige Bestrahlung2",
+        "condition": "H==a",
+        "prompt": "Klassifizierungsaufgabe: Beurteilen Sie den folgenden deutschen Mammographiebericht im Hinblick auf das Thema 'Vorherige Bestrahlung'. Wählen Sie eine der folgenden Kategorien: ja, nein oder nicht erwähnt. Der zu klassifizierende Text lautet: [TEXT]. Welche Kategorie passt am besten?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "K",
+        "topic_input": "Vorherige Chemotherapie2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "L",
+        "topic_input": "Vorherige Operation2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a medical text classifier. Classify the German mammography report [TEXT] according to the topic 'Vorherige Operation2'. Choose one of the following categories: ja (yes), nein (no), or nicht erwähnt (not mentioned). ANSWER: The correct category for this mammography report is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "M",
+        "topic_input": "Nicht onkologische OP erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "N",
+        "topic_input": "Vorherige Mammographie erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "O",
+        "topic_input": "Vorherige MR-Mammographie erfolgt",
+        "condition": "",
+        "prompt": "Bitte klassifizieren Sie den folgenden deutschen Mammographiebericht anhand des Themas 'Vorherige MR-Mammographie erfolgt'. Die Auswahlmöglichkeiten sind 'ja', 'nein' und 'nicht erwähnt'. Lesen Sie den Bericht sorgfältig durch und wählen Sie die richtige Kategorie basierend auf den bereitgestellten Informationen. Achten Sie insbesondere auf Hinweise auf vorherige MR-Mammographien oder deren Fehlen. Der zu klassifizierende Text lautet: [TEXT]. Wie lautet die korrekte Kategorie für diesen Text?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "P",
+        "topic_input": "Vorherige Biopsie erfolgt",
+        "condition": "",
+        "prompt": "Classify the mammography report [TEXT] as either \"ja\" (yes) or \"nein\" (no) based on whether a previous biopsy was performed, with the topic being 'Vorherige Biopsie erfolgt' (Previous biopsy performed).",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "Q",
+        "topic_input": "Seite der vorherig erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Side of previous biopsy' into one of the following categories: left, right, not mentioned. Select the most accurate category.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "R",
+        "topic_input": "Quadrant der vorherig erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "Classify the quadrant of the previous biopsy based on the provided German mammography report. The possible categories are: upper outer, upper inner, lower outer, lower inner, not mentioned. Analyze the following text to determine the most appropriate category: [TEXT].",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "S",
+        "topic_input": "Uhrposition der zuvor erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a specialized medical text classifier. Your task is to determine the clock position of a previously performed biopsy based on a given German mammography report. The allowed clock positions are numbered from 1 to 12, and there is also the option \"nicht erwähnt\" (not mentioned). Please carefully read the report and select the correct clock position. QUESTION: Analyze the following mammography report: [TEXT]. ANSWER: The correct clock position of the previously performed biopsy is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "T",
+        "topic_input": "Lokalisationstiefe der zuvor erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "U",
+        "topic_input": "Ergebnis der vorherigen Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Brustkrebs"
+            },
+            {
+                "id": "b",
+                "value": "Benigne"
+            },
+            {
+                "id": "c",
+                "value": "nicht aussagekräftig"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "V",
+        "topic_input": "Vorherige Sonographie erfolgt",
+        "condition": "",
+        "prompt": "Carefully read the following text '[TEXT]'. Is there a mentioning of a previous conducted sonography? Yes ('ja') or No ('nein')? ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "W",
+        "topic_input": "ACR Kategorie rechte Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "A"
+            },
+            {
+                "id": "b",
+                "value": "B"
+            },
+            {
+                "id": "c",
+                "value": "C"
+            },
+            {
+                "id": "d",
+                "value": "D"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "X",
+        "topic_input": "ACR Kategorie linke Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "A"
+            },
+            {
+                "id": "b",
+                "value": "B"
+            },
+            {
+                "id": "c",
+                "value": "C"
+            },
+            {
+                "id": "d",
+                "value": "D"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "Y",
+        "topic_input": "Läsion1 vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report '[TEXT]' to determine if it explicitly mentions the presence of a lesion. Classify the report as either 'ja' (yes) if a lesion is mentioned or 'nein' (no) if no lesion is mentioned. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "Z",
+        "topic_input": "Läsion1 - Form",
+        "condition": "Y==a",
+        "prompt": "Classify the shape of the first lesion described in the given German mammography report. The possible densities are oval, rund, irregulär. If none of these densities are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AA",
+        "topic_input": "Läsion1 - Rand",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AB",
+        "topic_input": "Läsion1 - Dichte",
+        "condition": "Y==a",
+        "prompt": "Classify the density of the first lesion described in the given German mammography report. The possible densities are hyperdense, isodens, hypodens, or fetthaltig. If none of these densities are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AC",
+        "topic_input": "Läsion1 - Dynamik",
+        "condition": "Y==a",
+        "prompt": "Classify the dynamic of the first lesion described in the given German mammography report. The possible densities are progredient, regredient, neu. If none of these dynamics are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AD",
+        "topic_input": "Läsion1 - Assoziierte Kalzifikation",
+        "condition": "Y==a",
+        "prompt": "Determine whether the mammography report [TEXT] indicates the presence of associated calcification for the first lesion mentioned. Classify the report as 'ja' (yes) if associated calcification is mentioned, 'nein' (no) if it is explicitly stated that there is no associated calcification, or 'nicht erwähnt' (not mentioned) if there is no information provided about associated calcification for the first lesion mentioned. ",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AE",
+        "topic_input": "Läsion1 - Seite",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a specialized medical text classifier. Your task is to determine the location of 'Läsion1' in a mammography report. The possible locations are 'links' (left), 'rechts' (right), or 'nicht erwähnt' (not mentioned). Please carefully analyze the provided report and identify the location of 'Läsion1' by selecting one of the following options: links (left breast), rechts (right breast), or nicht erwähnt (not mentioned in the report). QUESTION: The mammography report is: [TEXT]. ANSWER: The correct location of 'Läsion1' is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AF",
+        "topic_input": "Läsion1 - Sichtbarkeit auf Ebene",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AG",
+        "topic_input": "Läsion1 - Quadrant",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a medical text classifier. Classify the given German mammography report according to the location of 'Läsion1' in the breast. The possible quadrants are: oben aussen (upper outer), oben innen (upper inner), unten aussen (lower outer), unten innen (lower inner), or nicht erwähnt (not mentioned). Please read the report carefully and select the correct quadrant. The report is: [TEXT]. ANSWER: The correct category for 'Läsion1 - Quadrant' is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AH",
+        "topic_input": "Läsion1 - Uhrposition",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AI",
+        "topic_input": "Läsion1 - Lokalisationstiefe",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AJ",
+        "topic_input": "Läsion2 vorhanden",
+        "condition": "Y==a",
+        "prompt": "CLASSIFICATION TASK: Analyze the German mammography report [TEXT] to determine if 'Läsion2' is mentioned as being present. Ignore any irrelevant information and focus solely on the report's content. Categorize your response as either 'ja' (yes) if 'Läsion2' is explicitly mentioned as present or 'nein' (no) if it is not mentioned or its presence is unclear.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AK",
+        "topic_input": "Läsion2 - Form",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AL",
+        "topic_input": "Läsion2 - Rand",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AM",
+        "topic_input": "Läsion2 - Dichte",
+        "condition": "AK==a",
+        "prompt": "``` \nINSTRUCTION: Classify the mammography report [TEXT] according to the density of the lesion (Läsion2 - Dichte). Choose one of the following categories: hyperdense, isodens, hypodens, fetthaltig, or nicht erwähnt, based on the information provided in the report. Select the most accurate category. ANSWER: The density of the lesion in the report is ''",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AN",
+        "topic_input": "Läsion2 - Dynamik",
+        "condition": "AK==a",
+        "prompt": "Classify the change in the lesion over time based on the provided German mammography report. Determine if the lesion is progressive (progredient), regressive (regredient), new (neu), or if there is no mention of its dynamics (nicht erwähnt). Analyze the report content to select the most accurate category: [TEXT]",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AO",
+        "topic_input": "Läsion2 - Assoziierte Kalzifikation",
+        "condition": "AK==a",
+        "prompt": "Classify the mammography report [TEXT] based on the presence of associated calcification (Läsion2 - Assoziierte Kalzifikation). Choose one of the following categories: ja (yes) or nein (no). What is the correct classification?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AP",
+        "topic_input": "Läsion2 - Seite",
+        "condition": "AK==a",
+        "prompt": "CLASSIFICATION TASK: Determine the location of 'Läsion2' in the provided German mammography report. Choose one of the following categories: left (links), right (rechts), or not mentioned (nicht erwähnt). Read the report carefully and select the correct category. REPORT: [TEXT]. CATEGORY:",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AQ",
+        "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AR",
+        "topic_input": "Läsion2 - Quadrant",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AS",
+        "topic_input": "Läsion2 - Uhrposition",
+        "condition": "AK==a",
+        "prompt": "Classify the mammography report [TEXT] according to the 'Läsion2 - Uhrposition' topic, selecting the most accurate category from 1 to 12 or 'nicht erwähnt', based on the detailed description of the lesion's clock position in the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AT",
+        "topic_input": "Läsion2 - Lokalisationstiefe",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AU",
+        "topic_input": "Läsion3 vorhanden",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AV",
+        "topic_input": "Läsion3 - Form",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AW",
+        "topic_input": "Läsion3 - Rand",
+        "condition": "AU==a",
+        "prompt": "Classify the description of the lesion's margin in the given German mammography report. The margin can be described as one of the following: umschrieben, verdunkelt, mikrolobuliert, unklar, spikuliert, or nicht erwähnt. Classify the margin based on the report: [TEXT].",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AX",
+        "topic_input": "Läsion3 - Dichte",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AY",
+        "topic_input": "Läsion3 - Dynamik",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AZ",
+        "topic_input": "Läsion3 - Assoziierte Kalzifikation",
+        "condition": "AU==a",
+        "prompt": "Classify the mammography report [TEXT] according to the presence of associated calcification (Läsion3 - Assoziierte Kalzifikation). Choose one of the following categories: yes (ja), no (nein), or not mentioned (nicht erwähnt). Select the most accurate category based on the content of the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BA",
+        "topic_input": "Läsion3 - Seite",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BB",
+        "topic_input": "Läsion3 - Sichtbarkeit auf Ebene",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BC",
+        "topic_input": "Läsion3 - Quadrant",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BD",
+        "topic_input": "Läsion3 - Uhrposition",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BE",
+        "topic_input": "Läsion3 - Lokalisationstiefe",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BF",
+        "topic_input": "Asymmetrie vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a specialized medical text classifier for German mammography reports. Analyze the provided report [TEXT] to determine if it explicitly mentions the presence of asymmetry ('Asymmetrie vorhanden'). Classify the report as either 'ja' (yes, asymmetry is mentioned as present) or 'nein' (no, asymmetry is not mentioned as present). Ignore any mentions of asymmetry being absent or not determinable. ANSWER:",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BG",
+        "topic_input": "Asymmetrie - Beschreibung",
+        "condition": "BF==a",
+        "prompt": "Klassifizierungsaufgabe: Asymmetrie in einem Mammographie-Befund. \nGeben Sie die passende Kategorie für die Beschreibung der Asymmetrie an. \nDie möglichen Kategorien sind: oval, rund, irregulär, nicht beurteilbar, nicht erwähnt. \nDer zu klassifizierende Text lautet: [TEXT]. \nWelche Kategorie passt am besten zur Beschreibung der Asymmetrie in diesem Text?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BH",
+        "topic_input": "Asymmetrie - Assoziierte Kalzifikation",
+        "condition": "BF==a",
+        "prompt": "Classify the mammography report [TEXT] based on the presence or absence of asymmetry associated with calcification. Determine if the report indicates asymmetry with associated calcification (yes) or not (no). Choose the most accurate category (ja or nein) based on the content of the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BI",
+        "topic_input": "Asymmetrie - Seite",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BJ",
+        "topic_input": "Asymmetrie - Quadrant",
+        "condition": "BF==a",
+        "prompt": "CLASSIFICATION TASK: Identify the quadrant of asymmetry mentioned in the given German mammography report. The report is: [TEXT]. Choose the correct category from the following options: oben aussen (outer upper), oben innen (inner upper), unten aussen (outer lower), unten innen (inner lower), or nicht erwähnt (not mentioned). Select the most appropriate category.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BK",
+        "topic_input": "Asymmetrie - Uhrposition",
+        "condition": "BF==a",
+        "prompt": "CLASSIFICATION TASK: Carefully examine the German mammography report [TEXT] to identify any mentioned asymmetry and its corresponding clock position (Uhrposition). Select the most precise category from the options: 1 o'clock, 2 o'clock, 3 o'clock, 4 o'clock, 5 o'clock, 6 o'clock, 7 o'clock, 8 o'clock, 9 o'clock, 10 o'clock, 11 o'clock, 12 o'clock, or 'nicht erwähnt' (not mentioned), even if the report only implies or indirectly mentions the asymmetry. What is the correct category for this report?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BL",
+        "topic_input": "Asymmetrie - Lokalisationstiefe",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BM",
+        "topic_input": "Architekturstörung vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: Classify the presence of architectural distortion in the provided German mammography report '[TEXT]'. Please carefully read the report and determine if there is any mention of an architectural distortion ('Architekturstörung'). Your answer should be either 'ja' (yes) if an architectural distortion is mentioned or 'nein' (no) if it is not mentioned or if the report does not indicate any distortion. ANSWER:",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BN",
+        "topic_input": "Architekturstörung - Assoziierte Kalzifikation",
+        "condition": "BM==a",
+        "prompt": "Classify the mammography report '[TEXT]' according to the presence of 'Architekturstörung - Assoziierte Kalzifikation'. Please select one of the following options: 'ja' if the report explicitly mentions an architectural distortion associated with calcification, or 'nein' if it does not. ANSWER:",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BO",
+        "topic_input": "Architekturstörung - Lokalisationstiefe",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report according to the localization depth of architectural distortion. The possible categories are: Anterior, Mitte, Posterior, Retromamillär, Präpektoral, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BP",
+        "topic_input": "Architekturstörung - Seite",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report based on the side (left or right) where the architectural distortion is present. The possible categories are: links (left), rechts (right), nicht erwähnt (not mentioned). QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BQ",
+        "topic_input": "Architekturstörung - Sichtbarkeit auf Ebene",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: Classify the report based on the visibility of architectural distortion at different levels. The possible categories are: kraniokaudal, mediolateral oblique, nicht beurteilbar, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BR",
+        "topic_input": "Architekturstörung - Quadrant",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report based on the quadrant where the architectural distortion is located. The categories to choose from are: oben aussen, oben innen, unten aussen, unten innen, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BS",
+        "topic_input": "Architekturstörung - Uhrposition",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: Classify the provided report based on the clock position of architectural distortion. The possible categories are: 1 to 12, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BT",
+        "topic_input": "Intramammärer Lymphknoten vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report '[TEXT]'. Is there a mentioning of an intramammary lymph node ('Intramammärer Lymphknoten')? Your answer should be yes ('ja') or no ('nein'). If nothing is mentioned, the answer is 'nicht erwähnt'. ANSWER: The correct answer for this report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BU",
+        "topic_input": "Intramammärer Lymphknoten - Seite",
+        "condition": "BT==a",
+        "prompt": "CLASSIFICATION TASK: Assign the correct category for the topic 'Intramammärer Lymphknoten - Seite' based on the provided German mammography report. The categories to choose from are: links (left), rechts (right), or nicht erwähnt (not mentioned). What is the correct category for the following report: [TEXT]?",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BV",
+        "topic_input": "Intramammärer Lymphknoten - Quadrant",
+        "condition": "BT==a",
+        "prompt": "Classify the location of the intramammary lymph node mentioned in the given German mammography report. The possible locations are: upper outer, upper inner, lower outer, lower inner, or not mentioned. Classify the text: [TEXT]",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BW",
+        "topic_input": "Intramammärer Lymphknoten - Uhrposition",
+        "condition": "BT==a",
+        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Intramammärer Lymphknoten - Uhrposition' using the following categories: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, nicht erwähnt. Select the most accurate category based on the content of the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BX",
+        "topic_input": "Intramammärer Lymphknoten - Lokalisationstiefe",
+        "condition": "BT==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BY",
+        "topic_input": "Solitär erweiterter Gang vorhanden",
+        "condition": "",
+        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Solitär erweiterter Gang vorhanden' and select one of the following categories: ja or nein. Provide the most accurate classification based on the content of the report.",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BZ",
+        "topic_input": "BIRADS linke Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. What is the BIRADS score of the left breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. ANSWER: The correct answer for this report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "0"
+            },
+            {
+                "id": "b",
+                "value": "1"
+            },
+            {
+                "id": "c",
+                "value": "2"
+            },
+            {
+                "id": "d",
+                "value": "3"
+            },
+            {
+                "id": "e",
+                "value": "4"
+            },
+            {
+                "id": "f",
+                "value": "4A"
+            },
+            {
+                "id": "g",
+                "value": "4B"
+            },
+            {
+                "id": "h",
+                "value": "4C"
+            },
+            {
+                "id": "i",
+                "value": "5"
+            },
+            {
+                "id": "j",
+                "value": "6"
+            },
+            {
+                "id": "k",
+                "value": "nicht erwähnt"
+            },
+            {
+                "id": "l",
+                "value": "unklar"
+            }
+        ]
+    },
+    {
+        "id": "CA",
+        "topic_input": "BIRADS rechte Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. What is the BIRADS score of the right breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. ANSWER: The correct answer for this report is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "0"
+            },
+            {
+                "id": "b",
+                "value": "1"
+            },
+            {
+                "id": "c",
+                "value": "2"
+            },
+            {
+                "id": "d",
+                "value": "3"
+            },
+            {
+                "id": "e",
+                "value": "4"
+            },
+            {
+                "id": "f",
+                "value": "4A"
+            },
+            {
+                "id": "g",
+                "value": "4B"
+            },
+            {
+                "id": "h",
+                "value": "4C"
+            },
+            {
+                "id": "i",
+                "value": "5"
+            },
+            {
+                "id": "j",
+                "value": "6"
+            },
+            {
+                "id": "k",
+                "value": "nicht erwähnt"
+            },
+            {
+                "id": "l",
+                "value": "unklar"
+            }
+        ]
+    }
+]

@@ -1,0 +1,2098 @@
+[
+    {
+        "id": "A",
+        "topic_input": "Familienanamnese",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "B",
+        "topic_input": "Verwandschaftsgrad bei positiver Familienanamnese",
+        "condition": "A==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Mutter"
+            },
+            {
+                "id": "b",
+                "value": "Tante"
+            },
+            {
+                "id": "c",
+                "value": "Grossmutter"
+            },
+            {
+                "id": "d",
+                "value": "Schwester"
+            },
+            {
+                "id": "e",
+                "value": "andere"
+            },
+            {
+                "id": "f",
+                "value": "unklar"
+            }
+        ]
+    },
+    {
+        "id": "C",
+        "topic_input": "Bekannter Brustkrebs",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "D",
+        "topic_input": "Seite des bekannten Brustkrebs",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "E",
+        "topic_input": "Vorherige Bestrahlung",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "F",
+        "topic_input": "Vorherige Chemotherapie",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "G",
+        "topic_input": "Vorherige Operation",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "H",
+        "topic_input": "Bekannter Brustkrebs2",
+        "condition": "C==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "I",
+        "topic_input": "Seite des bekannten Brustkrebs2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "J",
+        "topic_input": "Vorherige Bestrahlung2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "K",
+        "topic_input": "Vorherige Chemotherapie2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "L",
+        "topic_input": "Vorherige Operation2",
+        "condition": "H==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "M",
+        "topic_input": "Nicht onkologische OP erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "N",
+        "topic_input": "Vorherige Mammographie erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "O",
+        "topic_input": "Vorherige MR-Mammographie erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "P",
+        "topic_input": "Vorherige Biopsie erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "Q",
+        "topic_input": "Seite der vorherig erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "R",
+        "topic_input": "Quadrant der vorherig erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "S",
+        "topic_input": "Uhrposition der zuvor erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "T",
+        "topic_input": "Lokalisationstiefe der zuvor erfolgten Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "U",
+        "topic_input": "Ergebnis der vorherigen Biopsie",
+        "condition": "P==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Brustkrebs"
+            },
+            {
+                "id": "b",
+                "value": "Benigne"
+            },
+            {
+                "id": "c",
+                "value": "nicht aussagekräftig"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "V",
+        "topic_input": "Vorherige Sonographie erfolgt",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "W",
+        "topic_input": "ACR Kategorie rechte Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "A"
+            },
+            {
+                "id": "b",
+                "value": "B"
+            },
+            {
+                "id": "c",
+                "value": "C"
+            },
+            {
+                "id": "d",
+                "value": "D"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "X",
+        "topic_input": "ACR Kategorie linke Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "A"
+            },
+            {
+                "id": "b",
+                "value": "B"
+            },
+            {
+                "id": "c",
+                "value": "C"
+            },
+            {
+                "id": "d",
+                "value": "D"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "Y",
+        "topic_input": "Läsion1 vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "Z",
+        "topic_input": "Läsion1 - Form",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AA",
+        "topic_input": "Läsion1 - Rand",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AB",
+        "topic_input": "Läsion1 - Dichte",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AC",
+        "topic_input": "Läsion1 - Dynamik",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AD",
+        "topic_input": "Läsion1 - Assoziierte Kalzifikation",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AE",
+        "topic_input": "Läsion1 - Seite",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AF",
+        "topic_input": "Läsion1 - Sichtbarkeit auf Ebene",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AG",
+        "topic_input": "Läsion1 - Quadrant",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AH",
+        "topic_input": "Läsion1 - Uhrposition",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AI",
+        "topic_input": "Läsion1 - Lokalisationstiefe",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AJ",
+        "topic_input": "Läsion2 vorhanden",
+        "condition": "Y==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AK",
+        "topic_input": "Läsion2 - Form",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AL",
+        "topic_input": "Läsion2 - Rand",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AM",
+        "topic_input": "Läsion2 - Dichte",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AN",
+        "topic_input": "Läsion2 - Dynamik",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AO",
+        "topic_input": "Läsion2 - Assoziierte Kalzifikation",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AP",
+        "topic_input": "Läsion2 - Seite",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AQ",
+        "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AR",
+        "topic_input": "Läsion2 - Quadrant",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AS",
+        "topic_input": "Läsion2 - Uhrposition",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AT",
+        "topic_input": "Läsion2 - Lokalisationstiefe",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AU",
+        "topic_input": "Läsion3 vorhanden",
+        "condition": "AK==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "AV",
+        "topic_input": "Läsion3 - Form",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AW",
+        "topic_input": "Läsion3 - Rand",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "umschrieben"
+            },
+            {
+                "id": "b",
+                "value": "verdunkelt"
+            },
+            {
+                "id": "c",
+                "value": "mikrolobuliert"
+            },
+            {
+                "id": "d",
+                "value": "unklar"
+            },
+            {
+                "id": "e",
+                "value": "spikuliert"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AX",
+        "topic_input": "Läsion3 - Dichte",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "hyperdense"
+            },
+            {
+                "id": "b",
+                "value": "isodens"
+            },
+            {
+                "id": "c",
+                "value": "hypodens"
+            },
+            {
+                "id": "d",
+                "value": "fetthaltig"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AY",
+        "topic_input": "Läsion3 - Dynamik",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "progredient"
+            },
+            {
+                "id": "b",
+                "value": "regredient"
+            },
+            {
+                "id": "c",
+                "value": "neu"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "AZ",
+        "topic_input": "Läsion3 - Assoziierte Kalzifikation",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BA",
+        "topic_input": "Läsion3 - Seite",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BB",
+        "topic_input": "Läsion3 - Sichtbarkeit auf Ebene",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BC",
+        "topic_input": "Läsion3 - Quadrant",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BD",
+        "topic_input": "Läsion3 - Uhrposition",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BE",
+        "topic_input": "Läsion3 - Lokalisationstiefe",
+        "condition": "AU==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BF",
+        "topic_input": "Asymmetrie vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BG",
+        "topic_input": "Asymmetrie - Beschreibung",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oval"
+            },
+            {
+                "id": "b",
+                "value": "rund"
+            },
+            {
+                "id": "c",
+                "value": "irregulär"
+            },
+            {
+                "id": "d",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BH",
+        "topic_input": "Asymmetrie - Assoziierte Kalzifikation",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BI",
+        "topic_input": "Asymmetrie - Seite",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BJ",
+        "topic_input": "Asymmetrie - Quadrant",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BK",
+        "topic_input": "Asymmetrie - Uhrposition",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BL",
+        "topic_input": "Asymmetrie - Lokalisationstiefe",
+        "condition": "BF==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BM",
+        "topic_input": "Architekturstörung vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BN",
+        "topic_input": "Architekturstörung - Assoziierte Kalzifikation",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BO",
+        "topic_input": "Architekturstörung - Lokalisationstiefe",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BP",
+        "topic_input": "Architekturstörung - Seite",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BQ",
+        "topic_input": "Architekturstörung - Sichtbarkeit auf Ebene",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "kraniokaudal"
+            },
+            {
+                "id": "b",
+                "value": "mediolateral oblique"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BR",
+        "topic_input": "Architekturstörung - Quadrant",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BS",
+        "topic_input": "Architekturstörung - Uhrposition",
+        "condition": "BM==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BT",
+        "topic_input": "Intramammärer Lymphknoten vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BU",
+        "topic_input": "Intramammärer Lymphknoten - Seite",
+        "condition": "BT==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "links"
+            },
+            {
+                "id": "b",
+                "value": "rechts"
+            },
+            {
+                "id": "c",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BV",
+        "topic_input": "Intramammärer Lymphknoten - Quadrant",
+        "condition": "BT==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "oben aussen"
+            },
+            {
+                "id": "b",
+                "value": "oben innen"
+            },
+            {
+                "id": "c",
+                "value": "unten aussen"
+            },
+            {
+                "id": "d",
+                "value": "unten innen"
+            },
+            {
+                "id": "e",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BW",
+        "topic_input": "Intramammärer Lymphknoten - Uhrposition",
+        "condition": "BT==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "1"
+            },
+            {
+                "id": "b",
+                "value": "2"
+            },
+            {
+                "id": "c",
+                "value": "3"
+            },
+            {
+                "id": "d",
+                "value": "4"
+            },
+            {
+                "id": "e",
+                "value": "5"
+            },
+            {
+                "id": "f",
+                "value": "6"
+            },
+            {
+                "id": "g",
+                "value": "7"
+            },
+            {
+                "id": "h",
+                "value": "8"
+            },
+            {
+                "id": "i",
+                "value": "9"
+            },
+            {
+                "id": "j",
+                "value": "10"
+            },
+            {
+                "id": "k",
+                "value": "11"
+            },
+            {
+                "id": "l",
+                "value": "12"
+            },
+            {
+                "id": "m",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BX",
+        "topic_input": "Intramammärer Lymphknoten - Lokalisationstiefe",
+        "condition": "BT==a",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "Anterior"
+            },
+            {
+                "id": "b",
+                "value": "Mitte"
+            },
+            {
+                "id": "c",
+                "value": "Posterior"
+            },
+            {
+                "id": "d",
+                "value": "Retromamillär"
+            },
+            {
+                "id": "e",
+                "value": "Präpektoral"
+            },
+            {
+                "id": "f",
+                "value": "nicht erwähnt"
+            }
+        ]
+    },
+    {
+        "id": "BY",
+        "topic_input": "Solitär erweiterter Gang vorhanden",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "ja"
+            },
+            {
+                "id": "b",
+                "value": "nein"
+            }
+        ]
+    },
+    {
+        "id": "BZ",
+        "topic_input": "BIRADS linke Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "0"
+            },
+            {
+                "id": "b",
+                "value": "1"
+            },
+            {
+                "id": "c",
+                "value": "2"
+            },
+            {
+                "id": "d",
+                "value": "3"
+            },
+            {
+                "id": "e",
+                "value": "4"
+            },
+            {
+                "id": "f",
+                "value": "4A"
+            },
+            {
+                "id": "g",
+                "value": "4B"
+            },
+            {
+                "id": "h",
+                "value": "4C"
+            },
+            {
+                "id": "i",
+                "value": "5"
+            },
+            {
+                "id": "j",
+                "value": "6"
+            },
+            {
+                "id": "k",
+                "value": "nicht erwähnt"
+            },
+            {
+                "id": "l",
+                "value": "unklar"
+            }
+        ]
+    },
+    {
+        "id": "CA",
+        "topic_input": "BIRADS rechte Brust",
+        "condition": "",
+        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "categories": [
+            {
+                "id": "a",
+                "value": "0"
+            },
+            {
+                "id": "b",
+                "value": "1"
+            },
+            {
+                "id": "c",
+                "value": "2"
+            },
+            {
+                "id": "d",
+                "value": "3"
+            },
+            {
+                "id": "e",
+                "value": "4"
+            },
+            {
+                "id": "f",
+                "value": "4A"
+            },
+            {
+                "id": "g",
+                "value": "4B"
+            },
+            {
+                "id": "h",
+                "value": "4C"
+            },
+            {
+                "id": "i",
+                "value": "5"
+            },
+            {
+                "id": "j",
+                "value": "6"
+            },
+            {
+                "id": "k",
+                "value": "nicht erwähnt"
+            },
+            {
+                "id": "l",
+                "value": "unklar"
+            }
+        ]
+    }
+]
