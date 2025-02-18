@@ -838,7 +838,7 @@
     {
         "id": "AK",
         "topic_input": "Läsion2 - Form",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -862,7 +862,7 @@
     {
         "id": "AL",
         "topic_input": "Läsion2 - Rand",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -894,7 +894,7 @@
     {
         "id": "AM",
         "topic_input": "Läsion2 - Dichte",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "``` \nINSTRUCTION: Classify the mammography report [TEXT] according to the density of the lesion (Läsion2 - Dichte). Choose one of the following categories: hyperdense, isodens, hypodens, fetthaltig, or nicht erwähnt, based on the information provided in the report. Select the most accurate category. ANSWER: The density of the lesion in the report is ''",
         "categories": [
             {
@@ -922,7 +922,7 @@
     {
         "id": "AN",
         "topic_input": "Läsion2 - Dynamik",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "Classify the change in the lesion over time based on the provided German mammography report. Determine if the lesion is progressive (progredient), regressive (regredient), new (neu), or if there is no mention of its dynamics (nicht erwähnt). Analyze the report content to select the most accurate category: [TEXT]",
         "categories": [
             {
@@ -946,7 +946,7 @@
     {
         "id": "AO",
         "topic_input": "Läsion2 - Assoziierte Kalzifikation",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "Classify the mammography report [TEXT] based on the presence of associated calcification (Läsion2 - Assoziierte Kalzifikation). Choose one of the following categories: ja (yes) or nein (no). What is the correct classification?",
         "categories": [
             {
@@ -962,7 +962,7 @@
     {
         "id": "AP",
         "topic_input": "Läsion2 - Seite",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "CLASSIFICATION TASK: Determine the location of 'Läsion2' in the provided German mammography report. Choose one of the following categories: left (links), right (rechts), or not mentioned (nicht erwähnt). Read the report carefully and select the correct category. REPORT: [TEXT]. CATEGORY:",
         "categories": [
             {
@@ -982,7 +982,7 @@
     {
         "id": "AQ",
         "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1002,7 +1002,7 @@
     {
         "id": "AR",
         "topic_input": "Läsion2 - Quadrant",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1030,7 +1030,7 @@
     {
         "id": "AS",
         "topic_input": "Läsion2 - Uhrposition",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "Classify the mammography report [TEXT] according to the 'Läsion2 - Uhrposition' topic, selecting the most accurate category from 1 to 12 or 'nicht erwähnt', based on the detailed description of the lesion's clock position in the report.",
         "categories": [
             {
@@ -1090,7 +1090,7 @@
     {
         "id": "AT",
         "topic_input": "Läsion2 - Lokalisationstiefe",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1122,7 +1122,7 @@
     {
         "id": "AU",
         "topic_input": "Läsion3 vorhanden",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {

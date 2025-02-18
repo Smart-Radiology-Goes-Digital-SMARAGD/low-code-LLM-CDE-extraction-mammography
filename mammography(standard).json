@@ -838,7 +838,7 @@
     {
         "id": "AK",
         "topic_input": "Läsion2 - Form",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -862,7 +862,7 @@
     {
         "id": "AL",
         "topic_input": "Läsion2 - Rand",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -894,7 +894,7 @@
     {
         "id": "AM",
         "topic_input": "Läsion2 - Dichte",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -922,7 +922,7 @@
     {
         "id": "AN",
         "topic_input": "Läsion2 - Dynamik",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -946,7 +946,7 @@
     {
         "id": "AO",
         "topic_input": "Läsion2 - Assoziierte Kalzifikation",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -962,7 +962,7 @@
     {
         "id": "AP",
         "topic_input": "Läsion2 - Seite",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -982,7 +982,7 @@
     {
         "id": "AQ",
         "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1002,7 +1002,7 @@
     {
         "id": "AR",
         "topic_input": "Läsion2 - Quadrant",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1030,7 +1030,7 @@
     {
         "id": "AS",
         "topic_input": "Läsion2 - Uhrposition",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1090,7 +1090,7 @@
     {
         "id": "AT",
         "topic_input": "Läsion2 - Lokalisationstiefe",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
@@ -1122,7 +1122,7 @@
     {
         "id": "AU",
         "topic_input": "Läsion3 vorhanden",
-        "condition": "AK==a",
+        "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
             {
