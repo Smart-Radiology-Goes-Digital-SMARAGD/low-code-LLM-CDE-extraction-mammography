@@ -1,7 +1,7 @@
 [
     {
         "id": "A",
-        "topic_input": "Familienanamnese",
+        "topic_input": "Positive Familienanamnese",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -49,7 +49,7 @@
     },
     {
         "id": "C",
-        "topic_input": "Bekannter Brustkrebs",
+        "topic_input": "Bereits vorbekannter Brustkrebs erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -65,7 +65,7 @@
     },
     {
         "id": "D",
-        "topic_input": "Seite des bekannten Brustkrebs",
+        "topic_input": "Seite des bereits vorbekannten Brustkrebs",
         "condition": "C==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -85,7 +85,7 @@
     },
     {
         "id": "E",
-        "topic_input": "Vorherige Bestrahlung",
+        "topic_input": "Vorherige Bestrahlung erwähnt",
         "condition": "C==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -101,7 +101,7 @@
     },
     {
         "id": "F",
-        "topic_input": "Vorherige Chemotherapie",
+        "topic_input": "Vorherige Chemotherapie erwähnt",
         "condition": "C==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -117,7 +117,7 @@
     },
     {
         "id": "G",
-        "topic_input": "Vorherige Operation",
+        "topic_input": "Vorherige Operation erwähnt",
         "condition": "C==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -133,7 +133,7 @@
     },
     {
         "id": "H",
-        "topic_input": "Bekannter Brustkrebs2",
+        "topic_input": "Zweiter bereits vorbekannter Brustkrebs",
         "condition": "C==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -149,7 +149,7 @@
     },
     {
         "id": "I",
-        "topic_input": "Seite des bekannten Brustkrebs2",
+        "topic_input": "Seite des zweiten bereits vorbekannten Brustkrebs",
         "condition": "H==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -169,7 +169,7 @@
     },
     {
         "id": "J",
-        "topic_input": "Vorherige Bestrahlung2",
+        "topic_input": "Zweite vorherige Bestrahlung erwähnt",
         "condition": "H==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -185,7 +185,7 @@
     },
     {
         "id": "K",
-        "topic_input": "Vorherige Chemotherapie2",
+        "topic_input": "Zweite vorherige Chemotherapie erwähnt",
         "condition": "H==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -201,7 +201,7 @@
     },
     {
         "id": "L",
-        "topic_input": "Vorherige Operation2",
+        "topic_input": "Zweite vorherige Operation erwähnt",
         "condition": "H==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -217,7 +217,7 @@
     },
     {
         "id": "M",
-        "topic_input": "Nicht onkologische OP erfolgt",
+        "topic_input": "Zuvor erfolgte nicht-onkologische OP erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -233,7 +233,7 @@
     },
     {
         "id": "N",
-        "topic_input": "Vorherige Mammographie erfolgt",
+        "topic_input": "Zuvor erfolgte Mammographie erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -249,7 +249,7 @@
     },
     {
         "id": "O",
-        "topic_input": "Vorherige MR-Mammographie erfolgt",
+        "topic_input": "Zuvor erfolgte MRT-Mammographie erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -265,7 +265,7 @@
     },
     {
         "id": "P",
-        "topic_input": "Vorherige Biopsie erfolgt",
+        "topic_input": "Zuvor erfolgte Biopsie erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -281,7 +281,7 @@
     },
     {
         "id": "Q",
-        "topic_input": "Seite der vorherig erfolgten Biopsie",
+        "topic_input": "Seite der zuvor erfolgten Biopsie",
         "condition": "P==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -301,7 +301,7 @@
     },
     {
         "id": "R",
-        "topic_input": "Quadrant der vorherig erfolgten Biopsie",
+        "topic_input": "Quadrant der zuvor erfolgten Biopsie",
         "condition": "P==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -421,7 +421,7 @@
     },
     {
         "id": "U",
-        "topic_input": "Ergebnis der vorherigen Biopsie",
+        "topic_input": "Ergebnis der zuvor erfolgten Biopsie",
         "condition": "P==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -445,7 +445,7 @@
     },
     {
         "id": "V",
-        "topic_input": "Vorherige Sonographie erfolgt",
+        "topic_input": "Zuvor erfolgte Sonographie erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -517,7 +517,7 @@
     },
     {
         "id": "Y",
-        "topic_input": "Läsion1 vorhanden",
+        "topic_input": "Läsion erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -533,7 +533,7 @@
     },
     {
         "id": "Z",
-        "topic_input": "Läsion1 - Form",
+        "topic_input": "Form der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -557,7 +557,7 @@
     },
     {
         "id": "AA",
-        "topic_input": "Läsion1 - Rand",
+        "topic_input": "Rand der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -589,7 +589,7 @@
     },
     {
         "id": "AB",
-        "topic_input": "Läsion1 - Dichte",
+        "topic_input": "Dichte der (ersten) erwähnte Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -617,7 +617,7 @@
     },
     {
         "id": "AC",
-        "topic_input": "Läsion1 - Dynamik",
+        "topic_input": "Dynamik der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -641,7 +641,7 @@
     },
     {
         "id": "AD",
-        "topic_input": "Läsion1 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -661,7 +661,7 @@
     },
     {
         "id": "AE",
-        "topic_input": "Läsion1 - Seite",
+        "topic_input": "Seite der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -681,7 +681,7 @@
     },
     {
         "id": "AF",
-        "topic_input": "Läsion1 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -701,7 +701,7 @@
     },
     {
         "id": "AG",
-        "topic_input": "Läsion1 - Quadrant",
+        "topic_input": "Quadrant der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -729,7 +729,7 @@
     },
     {
         "id": "AH",
-        "topic_input": "Läsion1 - Uhrposition",
+        "topic_input": "Uhrposition der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -789,7 +789,7 @@
     },
     {
         "id": "AI",
-        "topic_input": "Läsion1 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der (ersten) erwähnten Läsion",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -821,7 +821,7 @@
     },
     {
         "id": "AJ",
-        "topic_input": "Läsion2 vorhanden",
+        "topic_input": "Zweite vorhandene Läsion erwähnt",
         "condition": "Y==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -837,7 +837,7 @@
     },
     {
         "id": "AK",
-        "topic_input": "Läsion2 - Form",
+        "topic_input": "Form der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -861,7 +861,7 @@
     },
     {
         "id": "AL",
-        "topic_input": "Läsion2 - Rand",
+        "topic_input": "Rand der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -893,7 +893,7 @@
     },
     {
         "id": "AM",
-        "topic_input": "Läsion2 - Dichte",
+        "topic_input": "Dichte der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -921,7 +921,7 @@
     },
     {
         "id": "AN",
-        "topic_input": "Läsion2 - Dynamik",
+        "topic_input": "Dynamik der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -945,7 +945,7 @@
     },
     {
         "id": "AO",
-        "topic_input": "Läsion2 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -961,7 +961,7 @@
     },
     {
         "id": "AP",
-        "topic_input": "Läsion2 - Seite",
+        "topic_input": "Seite der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -981,7 +981,7 @@
     },
     {
         "id": "AQ",
-        "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Eben der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1001,7 +1001,7 @@
     },
     {
         "id": "AR",
-        "topic_input": "Läsion2 - Quadrant",
+        "topic_input": "Quadrant der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1029,7 +1029,7 @@
     },
     {
         "id": "AS",
-        "topic_input": "Läsion2 - Uhrposition",
+        "topic_input": "Uhrposition der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1089,7 +1089,7 @@
     },
     {
         "id": "AT",
-        "topic_input": "Läsion2 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der zweiten erwähnten Läsion",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1121,7 +1121,7 @@
     },
     {
         "id": "AU",
-        "topic_input": "Läsion3 vorhanden",
+        "topic_input": "Dritte vorhandene Läsion erwähnt",
         "condition": "AJ==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1137,7 +1137,7 @@
     },
     {
         "id": "AV",
-        "topic_input": "Läsion3 - Form",
+        "topic_input": "Form der dritten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1161,7 +1161,7 @@
     },
     {
         "id": "AW",
-        "topic_input": "Läsion3 - Rand",
+        "topic_input": "Rand der dritten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1193,7 +1193,7 @@
     },
     {
         "id": "AX",
-        "topic_input": "Läsion3 - Dichte",
+        "topic_input": "Dichte der dritten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1221,7 +1221,7 @@
     },
     {
         "id": "AY",
-        "topic_input": "Läsion3 - Dynamik",
+        "topic_input": "Dynamik der dritten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1245,7 +1245,7 @@
     },
     {
         "id": "AZ",
-        "topic_input": "Läsion3 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1265,7 +1265,7 @@
     },
     {
         "id": "BA",
-        "topic_input": "Läsion3 - Seite",
+        "topic_input": "Seite der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1285,7 +1285,7 @@
     },
     {
         "id": "BB",
-        "topic_input": "Läsion3 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1305,7 +1305,7 @@
     },
     {
         "id": "BC",
-        "topic_input": "Läsion3 - Quadrant",
+        "topic_input": "Quadrant der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1333,7 +1333,7 @@
     },
     {
         "id": "BD",
-        "topic_input": "Läsion3 - Uhrposition",
+        "topic_input": "Uhrposition der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1393,7 +1393,7 @@
     },
     {
         "id": "BE",
-        "topic_input": "Läsion3 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der dritten erwähnten Läsion",
         "condition": "AU==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1425,7 +1425,7 @@
     },
     {
         "id": "BF",
-        "topic_input": "Asymmetrie vorhanden",
+        "topic_input": "Vorhandene Asymmetrie erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1441,7 +1441,7 @@
     },
     {
         "id": "BG",
-        "topic_input": "Asymmetrie - Beschreibung",
+        "topic_input": "Beschreibung der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1465,7 +1465,7 @@
     },
     {
         "id": "BH",
-        "topic_input": "Asymmetrie - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1481,7 +1481,7 @@
     },
     {
         "id": "BI",
-        "topic_input": "Asymmetrie - Seite",
+        "topic_input": "Seite der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1501,7 +1501,7 @@
     },
     {
         "id": "BJ",
-        "topic_input": "Asymmetrie - Quadrant",
+        "topic_input": "Quadrant der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1529,7 +1529,7 @@
     },
     {
         "id": "BK",
-        "topic_input": "Asymmetrie - Uhrposition",
+        "topic_input": "Uhrposition der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1589,7 +1589,7 @@
     },
     {
         "id": "BL",
-        "topic_input": "Asymmetrie - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der erwähnten Asymmetrie",
         "condition": "BF==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1621,7 +1621,7 @@
     },
     {
         "id": "BM",
-        "topic_input": "Architekturstörung vorhanden",
+        "topic_input": "Vorhandene Architekturstörung erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1637,7 +1637,7 @@
     },
     {
         "id": "BN",
-        "topic_input": "Architekturstörung - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1653,7 +1653,7 @@
     },
     {
         "id": "BO",
-        "topic_input": "Architekturstörung - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1685,7 +1685,7 @@
     },
     {
         "id": "BP",
-        "topic_input": "Architekturstörung - Seite",
+        "topic_input": "Seite der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1705,7 +1705,7 @@
     },
     {
         "id": "BQ",
-        "topic_input": "Architekturstörung - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1725,7 +1725,7 @@
     },
     {
         "id": "BR",
-        "topic_input": "Architekturstörung - Quadrant",
+        "topic_input": "Quadrant der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1753,7 +1753,7 @@
     },
     {
         "id": "BS",
-        "topic_input": "Architekturstörung - Uhrposition",
+        "topic_input": "Uhrposition der erwähnten Architekturstörung",
         "condition": "BM==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1813,7 +1813,7 @@
     },
     {
         "id": "BT",
-        "topic_input": "Intramammärer Lymphknoten vorhanden",
+        "topic_input": "Vorhandener Intramammärer Lymphknoten erwähnt",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1829,7 +1829,7 @@
     },
     {
         "id": "BU",
-        "topic_input": "Intramammärer Lymphknoten - Seite",
+        "topic_input": "Seite des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1849,7 +1849,7 @@
     },
     {
         "id": "BV",
-        "topic_input": "Intramammärer Lymphknoten - Quadrant",
+        "topic_input": "Quadrant des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1877,7 +1877,7 @@
     },
     {
         "id": "BW",
-        "topic_input": "Intramammärer Lymphknoten - Uhrposition",
+        "topic_input": "Uhrposition des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1937,7 +1937,7 @@
     },
     {
         "id": "BX",
-        "topic_input": "Intramammärer Lymphknoten - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [
@@ -1969,7 +1969,7 @@
     },
     {
         "id": "BY",
-        "topic_input": "Solitär erweiterter Gang vorhanden",
+        "topic_input": "Erwähnter solitär erweiterter Gang vorhanden",
         "condition": "",
         "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
         "categories": [

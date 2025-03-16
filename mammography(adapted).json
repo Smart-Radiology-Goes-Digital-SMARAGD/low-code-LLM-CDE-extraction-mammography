@@ -1,9 +1,9 @@
 [
     {
         "id": "A",
-        "topic_input": "Familienanamnese",
+        "topic_input": "Positive Familienanamnese",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is an already known positive family history for breast cancer. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a positive family history for breast cancer of the patient: [TEXT]? ANSWER: The correct answer to the question on whether there is an already known positive family history for breast cancer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -19,7 +19,7 @@
         "id": "B",
         "topic_input": "Verwandschaftsgrad bei positiver Familienanamnese",
         "condition": "A==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report a positive family history for breast cancer is mentioned. What member of the family had a positive breast cancer? Possible answers are ‘Mutter’, ‘Tante’, ‘Grossmutter’, ‘Schwester’, ‘andere’ oder ‘unklar’. QUESTION: In the following mammography report which family member had already breast cancer: [TEXT]? ANSWER: The answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -49,9 +49,9 @@
     },
     {
         "id": "C",
-        "topic_input": "Bekannter Brustkrebs",
+        "topic_input": "Bereits vorbekannter Brustkrebs erwähnt",
         "condition": "",
-        "prompt": "CLASSIFICATION TASK: Evaluate the provided German mammography report [TEXT] to ascertain whether the patient had a previously diagnosed breast cancer. Select 'ja' if the report clearly indicates a known breast cancer diagnosis prior to the mammography, 'nein' if it explicitly states the absence of a prior diagnosis, and 'nicht erwähnt' if no relevant information is mentioned. Please provide the most accurate classification based solely on the report's content.",
+        "prompt": "INSTRUCTION: Evaluate the provided German mammography report to ascertain whether the patient had a previously diagnosed breast cancer. Select 'ja' if the report clearly indicates a known breast cancer diagnosis prior to the mammography, 'nein' if it explicitly states the absence of a prior diagnosis, and 'nicht erwähnt' if no relevant information is mentioned. QUESTION: In the following mammography report did the patient already had a previously diagnosed breast cancer: [TEXT]? ANSWER: The answer to the question if the patient already had a previously diagnosed breast cancer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -65,9 +65,9 @@
     },
     {
         "id": "D",
-        "topic_input": "Seite des bekannten Brustkrebs",
+        "topic_input": "Seite des bereits vorbekannten Brustkrebs",
         "condition": "C==a",
-        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the side of the previously diagnosed breast cancer. Focus on specific terms, phrases, or descriptions that may indicate the cancer's location. Ignore patient data and unrelated medical information. QUESTION: In the following mammography report, on which side is the known breast cancer located, if mentioned or implied: [TEXT]? ANSWER: The known breast cancer is located on the",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the side of the previously diagnosed breast cancer. Focus on specific terms, phrases, or descriptions that may indicate the cancer's location. Ignore patient data and unrelated medical information. Possible answers are ‘links’ (left), ‘rechts’ (right) and ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which side is the known breast cancer located, if mentioned or implied: [TEXT]? ANSWER: The location of the known breast cancer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -85,9 +85,9 @@
     },
     {
         "id": "E",
-        "topic_input": "Vorherige Bestrahlung",
+        "topic_input": "Vorherige Bestrahlung erwähnt",
         "condition": "C==a",
-        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. Was there a previous radiotherapy conducted? Yes ('ja') or No ('nein'). If nothing is mentioned, the answer is not mentioned ('nicht erwähnt'). ANSWER: The correct answer for this report is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the side of the previously diagnosed breast cancer. Focus on specific terms, phrases, or descriptions that may indicate the cancer's location. Ignore patient data and unrelated medical information. Possible answers are ‘links’ (left), ‘rechts’ (right) and ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which side is the known breast cancer located, if mentioned or implied: [TEXT]? ANSWER: The answer to the question regarding the location of the known breast cancer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -101,9 +101,9 @@
     },
     {
         "id": "F",
-        "topic_input": "Vorherige Chemotherapie",
+        "topic_input": "Vorherige Chemotherapie erwähnt",
         "condition": "C==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a previous conducted chemotherapy for the breast cancer disease. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously conducted chemotherapy for the breast cancer disease: [TEXT]? ANSWER: The answer to the question whether a previous chemotherapy was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -117,9 +117,9 @@
     },
     {
         "id": "G",
-        "topic_input": "Vorherige Operation",
+        "topic_input": "Vorherige Operation erwähnt",
         "condition": "C==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a previous conducted surgery for the breast cancer disease. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously conducted surgery for the breast cancer disease: [TEXT]? ANSWER: The answer to the question whether a previous surgery was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -133,9 +133,9 @@
     },
     {
         "id": "H",
-        "topic_input": "Bekannter Brustkrebs2",
+        "topic_input": "Zweiter bereits vorbekannter Brustkrebs",
         "condition": "C==a",
-        "prompt": "Classify the provided German mammography report [TEXT] into one of the following categories regarding the topic 'Bekannter Brustkrebs2': ja (yes, known breast cancer) or nein (no, no known breast cancer). Choose the most accurate category based solely on the information contained within the report.",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a known breast cancer disease. Evaluate the provided German mammography report to ascertain whether the patient had also a second previously diagnosed breast cancer. Select 'ja' if the report clearly indicates a second known breast cancer diagnosis prior to the mammography, 'nein' if it explicitly states the absence of a prior diagnosis, and 'nicht erwähnt' if no relevant information is mentioned. QUESTION: In the following mammography report, is there a mentioning of a second already known breast cancer disease of the patient: [TEXT]? ANSWER: The correct answer on the question about a second breast cancer disease is ‘",
         "categories": [
             {
                 "id": "a",
@@ -149,9 +149,9 @@
     },
     {
         "id": "I",
-        "topic_input": "Seite des bekannten Brustkrebs2",
+        "topic_input": "Seite des zweiten bereits vorbekannten Brustkrebs",
         "condition": "H==a",
-        "prompt": "Classify the mammography report according to the side of the known breast cancer. Choose from the following categories: left, right, not mentioned. Classify the text: [TEXT]",
+        "prompt": "INSTRUCTION: In the following german mammography report, there is a mentioning of a second known breast cancer disease. Analyze the provided German mammography report to identify the side of the second previously diagnosed breast cancer. Focus on specific terms, phrases, or descriptions that may indicate the cancer's location. Ignore patient data and unrelated medical information. Possible answers are ‘links’ (left), ‘rechts’ (right) and ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which side is the known second breast cancer located: [TEXT]? ANSWER: The location of the second known breast cancer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -169,9 +169,9 @@
     },
     {
         "id": "J",
-        "topic_input": "Vorherige Bestrahlung2",
+        "topic_input": "Zweite vorherige Bestrahlung erwähnt",
         "condition": "H==a",
-        "prompt": "Klassifizierungsaufgabe: Beurteilen Sie den folgenden deutschen Mammographiebericht im Hinblick auf das Thema 'Vorherige Bestrahlung'. Wählen Sie eine der folgenden Kategorien: ja, nein oder nicht erwähnt. Der zu klassifizierende Text lautet: [TEXT]. Welche Kategorie passt am besten?",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously conducted radiation therapy.  Analyze the provided German mammography report to identify whether there is a mentioning also of a second previously conducted radiation therapy for the breast cancer disease. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a second previously conducted radiotherapy of the breast cancer patient: [TEXT]? ANSWER: The answer to the question whether a second previous radiation therapy was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -185,9 +185,9 @@
     },
     {
         "id": "K",
-        "topic_input": "Vorherige Chemotherapie2",
+        "topic_input": "Zweite vorherige Chemotherapie erwähnt",
         "condition": "H==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously conducted chemotherapy. Analyze the provided German mammography report to identify whether there is a mentioning of also a second previously conducted chemotherapy for the breast cancer disease. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a second previously conducted chemotherapy for the breast cancer disease: [TEXT]? ANSWER: The answer to the question whether a second previous chemotherapy was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -201,9 +201,9 @@
     },
     {
         "id": "L",
-        "topic_input": "Vorherige Operation2",
+        "topic_input": "Zweite vorherige Operation erwähnt",
         "condition": "H==a",
-        "prompt": "INSTRUCTION: You are a medical text classifier. Classify the German mammography report [TEXT] according to the topic 'Vorherige Operation2'. Choose one of the following categories: ja (yes), nein (no), or nicht erwähnt (not mentioned). ANSWER: The correct category for this mammography report is",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously conducted surgery. Analyze the provided German mammography report to identify whether there is a mentioning of also a second previous conducted surgery for the breast cancer disease. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a second previously conducted surgery for the breast cancer disease: [TEXT]? ANSWER: The answer to the question whether a second previous surgery was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -217,9 +217,9 @@
     },
     {
         "id": "M",
-        "topic_input": "Nicht onkologische OP erfolgt",
+        "topic_input": "Zuvor erfolgte nicht-onkologische OP erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a non-oncological surgery conducted. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously conducted non-oncological surgery: [TEXT]? ANSWER: The answer to the question whether a non-oncological surgery was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -233,9 +233,9 @@
     },
     {
         "id": "N",
-        "topic_input": "Vorherige Mammographie erfolgt",
+        "topic_input": "Zuvor erfolgte Mammographie erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a previous mammography conducted. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously performed mammography: [TEXT]? ANSWER: The answer to the question whether a previous mammography was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -249,9 +249,9 @@
     },
     {
         "id": "O",
-        "topic_input": "Vorherige MR-Mammographie erfolgt",
+        "topic_input": "Zuvor erfolgte MRT-Mammographie erwähnt",
         "condition": "",
-        "prompt": "Bitte klassifizieren Sie den folgenden deutschen Mammographiebericht anhand des Themas 'Vorherige MR-Mammographie erfolgt'. Die Auswahlmöglichkeiten sind 'ja', 'nein' und 'nicht erwähnt'. Lesen Sie den Bericht sorgfältig durch und wählen Sie die richtige Kategorie basierend auf den bereitgestellten Informationen. Achten Sie insbesondere auf Hinweise auf vorherige MR-Mammographien oder deren Fehlen. Der zu klassifizierende Text lautet: [TEXT]. Wie lautet die korrekte Kategorie für diesen Text?",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a previous magnet resonance mammography (=MR mammography) conducted. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously performed MR mammography: [TEXT]? ANSWER: The answer to the question whether a previous MR mammography was conducted is ‘",
         "categories": [
             {
                 "id": "a",
@@ -265,9 +265,9 @@
     },
     {
         "id": "P",
-        "topic_input": "Vorherige Biopsie erfolgt",
+        "topic_input": "Zuvor erfolgte Biopsie erwähnt",
         "condition": "",
-        "prompt": "Classify the mammography report [TEXT] as either \"ja\" (yes) or \"nein\" (no) based on whether a previous biopsy was performed, with the topic being 'Vorherige Biopsie erfolgt' (Previous biopsy performed).",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify whether there is a mentioning of a previous biopsy performed. Focus on specific terms, phrases, or descriptions that may answer this question. The possible answers are ‘ja’ (yes) or ‘nein’ (no). QUESTION: In the following mammography report, is there a mentioning of a previously performed biopsy: [TEXT]? ANSWER: The answer to the question whether a previous biopsy was performed is ‘",
         "categories": [
             {
                 "id": "a",
@@ -281,9 +281,9 @@
     },
     {
         "id": "Q",
-        "topic_input": "Seite der vorherig erfolgten Biopsie",
+        "topic_input": "Seite der zuvor erfolgten Biopsie",
         "condition": "P==a",
-        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Side of previous biopsy' into one of the following categories: left, right, not mentioned. Select the most accurate category.",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously performed biopsy. Analyze the provided German mammography report to identify on which side the biopsy was performed. Possible answers are links (left), rechts (right) or nicht erwähnt (not mentioned). QUESTION: In the following mammography report, on which side was the previously performed biopsy: [TEXT]? ANSWER: The answer to the question on which side the biopsy was performed is ‘",
         "categories": [
             {
                 "id": "a",
@@ -301,9 +301,9 @@
     },
     {
         "id": "R",
-        "topic_input": "Quadrant der vorherig erfolgten Biopsie",
+        "topic_input": "Quadrant der zuvor erfolgten Biopsie",
         "condition": "P==a",
-        "prompt": "Classify the quadrant of the previous biopsy based on the provided German mammography report. The possible categories are: upper outer, upper inner, lower outer, lower inner, not mentioned. Analyze the following text to determine the most appropriate category: [TEXT].",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously performed biopsy. Analyze the provided German mammography report to identify in which quadrant the biopsy was performed. Possible answers are oben aussen, oben innen, unten aussen, unten innen und nicht erwähnt. QUESTION: In the following mammography report, in which quadrant was the previously performed biopsy: [TEXT]? ANSWER: The answer to the question in which quadrant the biopsy was performed is ‘",
         "categories": [
             {
                 "id": "a",
@@ -331,7 +331,7 @@
         "id": "S",
         "topic_input": "Uhrposition der zuvor erfolgten Biopsie",
         "condition": "P==a",
-        "prompt": "INSTRUCTION: You are a specialized medical text classifier. Your task is to determine the clock position of a previously performed biopsy based on a given German mammography report. The allowed clock positions are numbered from 1 to 12, and there is also the option \"nicht erwähnt\" (not mentioned). Please carefully read the report and select the correct clock position. QUESTION: Analyze the following mammography report: [TEXT]. ANSWER: The correct clock position of the previously performed biopsy is",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously performed biopsy. Analyze the provided German mammography report to identify the clock position (1-12 or ‘nicht erwähnt’) of the breast in which the biopsy was performed. QUESTION: In the following mammography report, what is the clock position of the previously performed biopsy: [TEXT]? ANSWER: The answer to the question of the clock position of the previously performed biopsy is ‘",
         "categories": [
             {
                 "id": "a",
@@ -391,7 +391,7 @@
         "id": "T",
         "topic_input": "Lokalisationstiefe der zuvor erfolgten Biopsie",
         "condition": "P==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously performed biopsy. Analyze the provided German mammography report to identify the depth in which the biopsy was performed. Possible answers are ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’ oder ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the previously performed biopsy: [TEXT]? ANSWER: The answer to the question of depth of the previously performed biopsy is ‘",
         "categories": [
             {
                 "id": "a",
@@ -421,9 +421,9 @@
     },
     {
         "id": "U",
-        "topic_input": "Ergebnis der vorherigen Biopsie",
+        "topic_input": "Ergebnis der zuvor erfolgten Biopsie",
         "condition": "P==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a previously performed biopsy. Analyze the provided German mammography report to identify the result of this biopsy. Possible answers are ‘Brustkrebs’ (breast cancer), ‘Benigne’ (benign), ‘nicht aussagekräftig’ (cannot be said) or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, what is the result of the previously performed biopsy: [TEXT]? ANSWER: The answer to the question of the result of the previously performed biopsy is ‘",
         "categories": [
             {
                 "id": "a",
@@ -445,9 +445,9 @@
     },
     {
         "id": "V",
-        "topic_input": "Vorherige Sonographie erfolgt",
+        "topic_input": "Zuvor erfolgte Sonographie erwähnt",
         "condition": "",
-        "prompt": "Carefully read the following text '[TEXT]'. Is there a mentioning of a previous conducted sonography? Yes ('ja') or No ('nein')? ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Classify the mammography report [TEXT] as either \"ja\" (yes) or \"nein\" (no) based on whether a previous sonography was performed. ANSWER: The correct answer on the question whether a previous sonography was performed is ‘",
         "categories": [
             {
                 "id": "a",
@@ -463,7 +463,7 @@
         "id": "W",
         "topic_input": "ACR Kategorie rechte Brust",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the ACR category of the right breast. The possible answers are ‘A’, ‘B’, ‘C’, ‘D’ or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, what is the ACR category of the right breast: [TEXT]? ANSWER: The ACR category of the right breast is ‘",
         "categories": [
             {
                 "id": "a",
@@ -491,7 +491,7 @@
         "id": "X",
         "topic_input": "ACR Kategorie linke Brust",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to identify the ACR category of the left breast. The possible answers are ‘A’, ‘B’, ‘C’, ‘D’ or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, what is the ACR category of the left breast: [TEXT]? ANSWER: The ACR category of the left breast is ‘",
         "categories": [
             {
                 "id": "a",
@@ -517,9 +517,9 @@
     },
     {
         "id": "Y",
-        "topic_input": "Läsion1 vorhanden",
+        "topic_input": "Läsion erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: Analyze the provided German mammography report '[TEXT]' to determine if it explicitly mentions the presence of a lesion. Classify the report as either 'ja' (yes) if a lesion is mentioned or 'nein' (no) if no lesion is mentioned. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to determine if it explicitly mentions the presence of a lesion. Classify the report as either 'ja' (yes) if a lesion is mentioned or 'nein' (no) if no lesion is mentioned. QUESTION: In the following mammography report, is there a mentioning of a lesion: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -533,9 +533,9 @@
     },
     {
         "id": "Z",
-        "topic_input": "Läsion1 - Form",
+        "topic_input": "Form der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "Classify the shape of the first lesion described in the given German mammography report. The possible densities are oval, rund, irregulär. If none of these densities are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "prompt": "INSTRUCTION: Classify the shape of the first lesion described in the given German mammography report. The possible shapes are ‘oval’, ‘rund’, ‘irregulär’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the shape of (the first) mentioned lesion: [TEXT]? ANSWER: The correct answer for the shape of the first lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -557,9 +557,9 @@
     },
     {
         "id": "AA",
-        "topic_input": "Läsion1 - Rand",
+        "topic_input": "Rand der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Classify the margin of the first lesion described in the given German mammography report. The possible margins are ‘umschrieben’, ‘verdunkelt’, ‘mikrolobuliert’, ‘unklar’, ‘spikuliert’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the margin of (the first) mentioned lesion: [TEXT]? ANSWER: The correct answer for the margin of the first lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -589,9 +589,9 @@
     },
     {
         "id": "AB",
-        "topic_input": "Läsion1 - Dichte",
+        "topic_input": "Dichte der (ersten) erwähnte Läsion",
         "condition": "Y==a",
-        "prompt": "Classify the density of the first lesion described in the given German mammography report. The possible densities are hyperdense, isodens, hypodens, or fetthaltig. If none of these densities are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "prompt": "INSTRUCTION: Classify the density of the first lesion described in the given German mammography report. The possible densities are ‘hyperdense’, ‘isodens’, ‘hypodens’, or  ‘fetthaltig’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the density of (the first) mentioned lesion: [TEXT]? ANSWER: The correct answer for the density of the first lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -617,9 +617,9 @@
     },
     {
         "id": "AC",
-        "topic_input": "Läsion1 - Dynamik",
+        "topic_input": "Dynamik der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "Classify the dynamic of the first lesion described in the given German mammography report. The possible densities are progredient, regredient, neu. If none of these dynamics are mentioned, select 'nicht erwähnt'. Classify the text: [TEXT]. Answer: The correct classification for this mammography report is '",
+        "prompt": "INSTRUCTION: Classify the dynamic of the first lesion described in the given German mammography report. The possible dynamics are ‘progredient’, ‘regredient’, ‘neu’. If none of these dynamics are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the density of (the first) mentioned lesion: [TEXT]? ANSWER: The correct answer for the dynamic of the first lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -641,9 +641,9 @@
     },
     {
         "id": "AD",
-        "topic_input": "Läsion1 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "Determine whether the mammography report [TEXT] indicates the presence of associated calcification for the first lesion mentioned. Classify the report as 'ja' (yes) if associated calcification is mentioned, 'nein' (no) if it is explicitly stated that there is no associated calcification, or 'nicht erwähnt' (not mentioned) if there is no information provided about associated calcification for the first lesion mentioned. ",
+        "prompt": "INSTRUCTION: Determine whether the mammography report indicates the presence of associated calcification for the first lesion mentioned. Classify the report as 'ja' (yes) if associated calcification is mentioned, 'nein' (no) if it is explicitly stated that there is no associated calcification, or 'nicht erwähnt' (not mentioned) if there is no information provided about associated calcification for the first lesion mentioned. QUESTION: In the following mammography report, is there an associated calcification of (the first) mentioned lesion: [TEXT]?  ANSWER: The correct answer for the question on whether there is an associated calcification of the first lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -661,9 +661,9 @@
     },
     {
         "id": "AE",
-        "topic_input": "Läsion1 - Seite",
+        "topic_input": "Seite der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a specialized medical text classifier. Your task is to determine the location of 'Läsion1' in a mammography report. The possible locations are 'links' (left), 'rechts' (right), or 'nicht erwähnt' (not mentioned). Please carefully analyze the provided report and identify the location of 'Läsion1' by selecting one of the following options: links (left breast), rechts (right breast), or nicht erwähnt (not mentioned in the report). QUESTION: The mammography report is: [TEXT]. ANSWER: The correct location of 'Läsion1' is",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a lesion. Analyze the provided German mammography report to identify on which side this lesion (first lesion mentioned) is. Possible answers are links (left), rechts (right) or nicht erwähnt (not mentioned). QUESTION: In the following mammography report, on which side is the first lesion described in the mammography report: [TEXT]? ANSWER: The answer to the question on which side the first lesion described is, is ‘",
         "categories": [
             {
                 "id": "a",
@@ -681,9 +681,9 @@
     },
     {
         "id": "AF",
-        "topic_input": "Läsion1 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a lesion. Analyze the provided German mammography report to identify on which plain the lesion (first lesion mentioned) is visible. Possible answers are ‘kraniokaudal’, ‘mediolateral oblique’ or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which plain is the first lesion described in the mammography report visible: [TEXT]? ANSWER: The answer to the question on the visibility of first lesion described is ‘",
         "categories": [
             {
                 "id": "a",
@@ -701,9 +701,9 @@
     },
     {
         "id": "AG",
-        "topic_input": "Läsion1 - Quadrant",
+        "topic_input": "Quadrant der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a medical text classifier. Classify the given German mammography report according to the location of 'Läsion1' in the breast. The possible quadrants are: oben aussen (upper outer), oben innen (upper inner), unten aussen (lower outer), unten innen (lower inner), or nicht erwähnt (not mentioned). Please read the report carefully and select the correct quadrant. The report is: [TEXT]. ANSWER: The correct category for 'Läsion1 - Quadrant' is",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to determine the location of 'Läsion1' within the breast, focusing on the quadrant information. The report may specify the location as oben aussen (upper outer), oben innen (upper inner), unten aussen (lower outer), unten innen (lower inner), or it may not mention the quadrant at all (nicht erwähnt). QUESTION: In the following mammography report, in which quadrant is (the first) mentioned lesion: [TEXT]? ANSWER: The quadrant of the first mentioned lesion is ‘",
         "categories": [
             {
                 "id": "a",
@@ -729,9 +729,9 @@
     },
     {
         "id": "AH",
-        "topic_input": "Läsion1 - Uhrposition",
+        "topic_input": "Uhrposition der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a lesion. Analyze the provided German mammography report to identify the clock position (1-12 or ‘nicht erwähnt’) of the lesion (first lesion mentioned). QUESTION: In the following mammography report, what is the clock position of the first lesion mentioned: [TEXT]? ANSWER: The answer to the question of the clock position of the first lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -789,9 +789,9 @@
     },
     {
         "id": "AI",
-        "topic_input": "Läsion1 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der (ersten) erwähnten Läsion",
         "condition": "Y==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to determine the depth location of the first lesion. Please carefully read the report and select the most accurate category from the following options: ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’, or ‘nicht erwähnt’. QUESTION: In the following mammography report, at which depth is (the first) mentioned lesion: [TEXT]? The answer to the question of the depth of the first lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -821,9 +821,9 @@
     },
     {
         "id": "AJ",
-        "topic_input": "Läsion2 vorhanden",
+        "topic_input": "Zweite vorhandene Läsion erwähnt",
         "condition": "Y==a",
-        "prompt": "CLASSIFICATION TASK: Analyze the German mammography report [TEXT] to determine if 'Läsion2' is mentioned as being present. Ignore any irrelevant information and focus solely on the report's content. Categorize your response as either 'ja' (yes) if 'Läsion2' is explicitly mentioned as present or 'nein' (no) if it is not mentioned or its presence is unclear.",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a lesion (first lesion mentioned). Carefully examine the provided German mammography report and identify whether there is also a second lesion mentioned. Possible answers are 'ja' (yes; only if the report clearly indicates that a second lesion is present), and 'nein' (no; if it is not mentioned, its presence is uncertain, or the information is ambiguous). QUESTION: In the following mammography report is there a second lesion described: [TEXT]? ANSWER: The answer to the question whether there is a second lesion mentioned in the report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -837,9 +837,9 @@
     },
     {
         "id": "AK",
-        "topic_input": "Läsion2 - Form",
+        "topic_input": "Form der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Classify the shape of this second lesion described in the given German mammography report. The possible shapes are ‘oval’, ‘rund’, ‘irregulär’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report what is the shape of the second mentioned lesion: [TEXT]? ANSWER: The correct answer for the shape of the second lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -861,9 +861,9 @@
     },
     {
         "id": "AL",
-        "topic_input": "Läsion2 - Rand",
+        "topic_input": "Rand der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Classify the margin of this second lesion described in the given German mammography report. The possible margins are ‘umschrieben’, ‘verdunkelt’, ‘mikrolobuliert’, ‘unklar’, ‘spikuliert’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the margin of the second mentioned lesion [TEXT]? ANSWER: The correct answer for the margin of the second lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -893,9 +893,9 @@
     },
     {
         "id": "AM",
-        "topic_input": "Läsion2 - Dichte",
+        "topic_input": "Dichte der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "``` \nINSTRUCTION: Classify the mammography report [TEXT] according to the density of the lesion (Läsion2 - Dichte). Choose one of the following categories: hyperdense, isodens, hypodens, fetthaltig, or nicht erwähnt, based on the information provided in the report. Select the most accurate category. ANSWER: The density of the lesion in the report is ''",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Classify the density of this second lesion described in the given German mammography report. The possible densities are ‘hyperdense’, ‘isodens’, ‘hypodens’, or ‘fetthaltig’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the density of the second mentioned lesion [TEXT]? ANSWER: The correct answer for the density of the second lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -921,9 +921,9 @@
     },
     {
         "id": "AN",
-        "topic_input": "Läsion2 - Dynamik",
+        "topic_input": "Dynamik der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "Classify the change in the lesion over time based on the provided German mammography report. Determine if the lesion is progressive (progredient), regressive (regredient), new (neu), or if there is no mention of its dynamics (nicht erwähnt). Analyze the report content to select the most accurate category: [TEXT]",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Classify the dynamic of this second lesion described in the given German mammography report. The possible dynamics are ‘progredient’, ‘regredient’, ‘neu’. If none of these dynamics are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the dynamic of the second mentioned lesion: [TEXT]? ANSWER: The correct answer for the dynamic of the second lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -945,9 +945,9 @@
     },
     {
         "id": "AO",
-        "topic_input": "Läsion2 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "Classify the mammography report [TEXT] based on the presence of associated calcification (Läsion2 - Assoziierte Kalzifikation). Choose one of the following categories: ja (yes) or nein (no). What is the correct classification?",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Determine whether the mammography report indicates the presence of associated calcification for this second lesion mentioned. Classify the report as 'ja' (yes) if associated calcification is mentioned, 'nein' (no) if it is explicitly stated that there is no associated calcification, or 'nicht erwähnt' (not mentioned) if there is no information provided about associated calcification for the second lesion mentioned. QUESTION: In the following mammography report, is there an associated calcification of the second mentioned lesion: [TEXT]? ANSWER: The correct answer for the question on whether there is an associated calcification of the second lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -961,9 +961,9 @@
     },
     {
         "id": "AP",
-        "topic_input": "Läsion2 - Seite",
+        "topic_input": "Seite der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "CLASSIFICATION TASK: Determine the location of 'Läsion2' in the provided German mammography report. Choose one of the following categories: left (links), right (rechts), or not mentioned (nicht erwähnt). Read the report carefully and select the correct category. REPORT: [TEXT]. CATEGORY:",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned). Analyze the provided German mammography report to identify on which side this second lesion (second lesion mentioned) is. Possible answers are links (left), rechts (right) or nicht erwähnt (not mentioned). QUESTION: In the following mammography report, on which side is the second lesion described in the mammography report: [TEXT]? ANSWER: The answer to the question on which side the second lesion described is, is ‘",
         "categories": [
             {
                 "id": "a",
@@ -981,9 +981,9 @@
     },
     {
         "id": "AQ",
-        "topic_input": "Läsion2 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Eben der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned). Analyze the provided German mammography report to identify on which plain the lesion (second lesion mentioned) is visible. Possible answers are ‘kraniokaudal’, ‘mediolateral oblique’ or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which plain is the second lesion described in the mammography report visible: [TEXT]? ANSWER: The answer to the question on the visibility of second lesion described is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1001,9 +1001,9 @@
     },
     {
         "id": "AR",
-        "topic_input": "Läsion2 - Quadrant",
+        "topic_input": "Quadrant der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned). Analyze the provided German mammography report to determine the location the second lesion mentioned within the breast, focusing on the quadrant information. The report may specify the location as oben aussen (upper outer), oben innen (upper inner), unten aussen (lower outer), unten innen (lower inner), or it may not mention the quadrant at all (nicht erwähnt). QUESTION: In the following mammography report, in which quadrant is the second mentioned lesion: [TEXT]? ANSWER: The second lesion mentioned in the report is located in the quadrant ‘",
         "categories": [
             {
                 "id": "a",
@@ -1029,9 +1029,9 @@
     },
     {
         "id": "AS",
-        "topic_input": "Läsion2 - Uhrposition",
+        "topic_input": "Uhrposition der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "Classify the mammography report [TEXT] according to the 'Läsion2 - Uhrposition' topic, selecting the most accurate category from 1 to 12 or 'nicht erwähnt', based on the detailed description of the lesion's clock position in the report.",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Analyze the provided German mammography report to identify the clock position (1-12 or ‘nicht erwähnt’) of this second lesion (second lesion mentioned). QUESTION: In the following mammography report, what is the clock position of the second lesion mentioned: [TEXT]? ANSWER: The answer to the question of the clock position of the second lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1089,9 +1089,9 @@
     },
     {
         "id": "AT",
-        "topic_input": "Läsion2 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der zweiten erwähnten Läsion",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Analyze the provided German mammography report to determine the depth location of this second lesion. Please carefully read the report and select the most accurate category from the following options: ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’, or ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the second mentioned lesion: [TEXT]? The answer to the question of the depth of the second lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1121,9 +1121,9 @@
     },
     {
         "id": "AU",
-        "topic_input": "Läsion3 vorhanden",
+        "topic_input": "Dritte vorhandene Läsion erwähnt",
         "condition": "AJ==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of several lesions. Carefully examine the provided German mammography report and identify whether there is a third lesion mentioned. Possible answers are 'ja' (yes; only if the report clearly indicates that a second lesion is present), and 'nein' (no; if it is not mentioned, its presence is uncertain, or the information is ambiguous). QUESTION: In the following mammography report is there a third lesion described: [TEXT]? ANSWER: The answer to the question whether there is a third lesion mentioned in the report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1137,9 +1137,9 @@
     },
     {
         "id": "AV",
-        "topic_input": "Läsion3 - Form",
+        "topic_input": "Form der dritten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Classify the shape of this third lesion described in the given German mammography report. The possible shapes are ‘oval’, ‘rund’, ‘irregulär’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report what is the shape of the third mentioned lesion: [TEXT]? ANSWER: The correct answer for the shape of the third lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -1161,9 +1161,9 @@
     },
     {
         "id": "AW",
-        "topic_input": "Läsion3 - Rand",
+        "topic_input": "Rand der dritten Läsion",
         "condition": "AU==a",
-        "prompt": "Classify the description of the lesion's margin in the given German mammography report. The margin can be described as one of the following: umschrieben, verdunkelt, mikrolobuliert, unklar, spikuliert, or nicht erwähnt. Classify the margin based on the report: [TEXT].",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Classify the margin of this second lesion described in the given German mammography report. The possible margins are ‘umschrieben’, ‘verdunkelt’, ‘mikrolobuliert’, ‘unklar’, ‘spikuliert’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the margin of the third mentioned lesion [TEXT]? ANSWER: The correct answer for the margin of the thirdd lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -1193,9 +1193,9 @@
     },
     {
         "id": "AX",
-        "topic_input": "Läsion3 - Dichte",
+        "topic_input": "Dichte der dritten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Classify the density of this third lesion described in the given German mammography report. The possible densities are ‘hyperdense’, ‘isodens’, ‘hypodens’, or ‘fetthaltig’. If none of these densities are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the density of the third mentioned lesion [TEXT]? ANSWER: The correct answer for the density of the third lesion described in the mammography report is '",
         "categories": [
             {
                 "id": "a",
@@ -1221,9 +1221,9 @@
     },
     {
         "id": "AY",
-        "topic_input": "Läsion3 - Dynamik",
+        "topic_input": "Dynamik der dritten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a second lesion (second lesion mentioned in the report). Classify the dynamic of this third lesion described in the given German mammography report. The possible dynamics are ‘progredient’, ‘regredient’, ‘neu’. If none of these dynamics are mentioned, select 'nicht erwähnt'. QUESTION: In the following mammography report, what is the dynamic of the third mentioned lesion: [TEXT]? ANSWER: The correct answer for the dynamic of the third lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1245,9 +1245,9 @@
     },
     {
         "id": "AZ",
-        "topic_input": "Läsion3 - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "Classify the mammography report [TEXT] according to the presence of associated calcification (Läsion3 - Assoziierte Kalzifikation). Choose one of the following categories: yes (ja), no (nein), or not mentioned (nicht erwähnt). Select the most accurate category based on the content of the report.",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Determine whether the mammography report indicates the presence of associated calcification for this third lesion mentioned. Classify the report as 'ja' (yes) if associated calcification is mentioned, 'nein' (no) if it is explicitly stated that there is no associated calcification, or 'nicht erwähnt' (not mentioned) if there is no information provided about associated calcification for the third lesion mentioned. QUESTION: In the following mammography report, is there an associated calcification of the third mentioned lesion: [TEXT]? ANSWER: The correct answer for the question on whether there is an associated calcification of the third lesion described in the mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1265,9 +1265,9 @@
     },
     {
         "id": "BA",
-        "topic_input": "Läsion3 - Seite",
+        "topic_input": "Seite der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned). Analyze the provided German mammography report to identify on which side this third lesion (third lesion mentioned) is. Possible answers are links (left), rechts (right) or nicht erwähnt (not mentioned). QUESTION: In the following mammography report, on which side is the third lesion described in the mammography report: [TEXT]? ANSWER: The answer to the question on which side the third lesion described is, is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1285,9 +1285,9 @@
     },
     {
         "id": "BB",
-        "topic_input": "Läsion3 - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned). Analyze the provided German mammography report to identify on which plain the lesion (third lesion mentioned) is visible. Possible answers are ‘kraniokaudal’, ‘mediolateral oblique’ or ‘nicht erwähnt’ (not mentioned). QUESTION: In the following mammography report, on which plain is the third lesion described in the mammography report visible: [TEXT]? ANSWER: The answer to the question on the visibility of third lesion described is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1305,9 +1305,9 @@
     },
     {
         "id": "BC",
-        "topic_input": "Läsion3 - Quadrant",
+        "topic_input": "Quadrant der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned). Analyze the provided German mammography report to determine the location the third lesion mentioned within the breast, focusing on the quadrant information. The report may specify the location as oben aussen (upper outer), oben innen (upper inner), unten aussen (lower outer), unten innen (lower inner), or it may not mention the quadrant at all (nicht erwähnt). QUESTION: In the following mammography report, in which quadrant is the third mentioned lesion: [TEXT]? ANSWER: The third lesion mentioned in the report is located in the quadrant ‘",
         "categories": [
             {
                 "id": "a",
@@ -1333,9 +1333,9 @@
     },
     {
         "id": "BD",
-        "topic_input": "Läsion3 - Uhrposition",
+        "topic_input": "Uhrposition der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Analyze the provided German mammography report to identify the clock position (1-12 or ‘nicht erwähnt’) of this third lesion (third lesion mentioned). QUESTION: In the following mammography report, what is the clock position of the third lesion mentioned: [TEXT]? ANSWER: The answer to the question of the clock position of the third lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1393,9 +1393,9 @@
     },
     {
         "id": "BE",
-        "topic_input": "Läsion3 - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der dritten erwähnten Läsion",
         "condition": "AU==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of a third lesion (third lesion mentioned in the report). Analyze the provided German mammography report to determine the depth location of this third lesion. Please carefully read the report and select the most accurate category from the following options: ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’, or ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the third mentioned lesion: [TEXT]? The answer to the question of the depth of the third lesion mentioned is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1425,9 +1425,9 @@
     },
     {
         "id": "BF",
-        "topic_input": "Asymmetrie vorhanden",
+        "topic_input": "Vorhandene Asymmetrie erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a specialized medical text classifier for German mammography reports. Analyze the provided report [TEXT] to determine if it explicitly mentions the presence of asymmetry ('Asymmetrie vorhanden'). Classify the report as either 'ja' (yes, asymmetry is mentioned as present) or 'nein' (no, asymmetry is not mentioned as present). Ignore any mentions of asymmetry being absent or not determinable. ANSWER:",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report to determine if mentions an asymmetry. Classify the report as either 'ja' (yes) if an asymmetry is mentioned or 'nein' (no) if no lesion is mentioned. QUESTION: In the following mammography report, is there a mentioning of an asymmetry: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1441,9 +1441,9 @@
     },
     {
         "id": "BG",
-        "topic_input": "Asymmetrie - Beschreibung",
+        "topic_input": "Beschreibung der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "Klassifizierungsaufgabe: Asymmetrie in einem Mammographie-Befund. \nGeben Sie die passende Kategorie für die Beschreibung der Asymmetrie an. \nDie möglichen Kategorien sind: oval, rund, irregulär, nicht beurteilbar, nicht erwähnt. \nDer zu klassifizierende Text lautet: [TEXT]. \nWelche Kategorie passt am besten zur Beschreibung der Asymmetrie in diesem Text?",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an asymmetry. Analyze the provided report to determine the shape of this asymmetry. Possible answers are ‘oval’, ‘rund’, ‘irregulär‘, ‚nicht beurteilbar‘ or ‚nicht erwähnt‘.  QUESTION: In the following mammography report, what is the shape of the mentioned asymmetry: [TEXT]? ANSWER: The correct answer to the question on the shape of the mentioned asymmetry in this report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1465,9 +1465,9 @@
     },
     {
         "id": "BH",
-        "topic_input": "Asymmetrie - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "Classify the mammography report [TEXT] based on the presence or absence of asymmetry associated with calcification. Determine if the report indicates asymmetry with associated calcification (yes) or not (no). Choose the most accurate category (ja or nein) based on the content of the report.",
+        "prompt": "INSTRUCTION: Classify the mammography report based on the presence or absence of asymmetry associated with calcification. Determine if the report indicates asymmetry with associated calcification (yes) or not (no). Choose the most accurate category (ja or nein) based on the content of the report. QUESTION: In the following mammography report, is there an associated calcification of the mentioned asymmetry: [TEXT]? ANSWER: The correct answer to the question on associated calcifications of the mentioned asymmetry in the report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1481,9 +1481,9 @@
     },
     {
         "id": "BI",
-        "topic_input": "Asymmetrie - Seite",
+        "topic_input": "Seite der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an asymmetry. Analyze the provided report to determine the side of this asymmetry. Possible answers are ‘links’, ‘rechts’ or ‘nicht erwähnt’. QUESTION: In the following mammography report, on which side is the mentioned asymmetry: [TEXT]? ANSWER: The correct answer to the question on the laterality of the mentioned asymmetry in this report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1501,9 +1501,9 @@
     },
     {
         "id": "BJ",
-        "topic_input": "Asymmetrie - Quadrant",
+        "topic_input": "Quadrant der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "CLASSIFICATION TASK: Identify the quadrant of asymmetry mentioned in the given German mammography report. The report is: [TEXT]. Choose the correct category from the following options: oben aussen (outer upper), oben innen (inner upper), unten aussen (outer lower), unten innen (inner lower), or nicht erwähnt (not mentioned). Select the most appropriate category.",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report. Determine the specific quadrant where asymmetry is identified, if any. Choose from the following categories: oben aussen (outer upper), oben innen (inner upper), unten aussen (outer lower), unten innen (inner lower), or nicht erwähnt (not mentioned) if no quadrant is specified. Select the most accurate category based on the report's content. QUESTION: In the following mammography report, in which quadrant is the mentioned asymmetry: [TEXT]? ANSWER: The correct answer to the question on the quadrant of the mentioned asymmetry is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1529,9 +1529,9 @@
     },
     {
         "id": "BK",
-        "topic_input": "Asymmetrie - Uhrposition",
+        "topic_input": "Uhrposition der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "CLASSIFICATION TASK: Carefully examine the German mammography report [TEXT] to identify any mentioned asymmetry and its corresponding clock position (Uhrposition). Select the most precise category from the options: 1 o'clock, 2 o'clock, 3 o'clock, 4 o'clock, 5 o'clock, 6 o'clock, 7 o'clock, 8 o'clock, 9 o'clock, 10 o'clock, 11 o'clock, 12 o'clock, or 'nicht erwähnt' (not mentioned), even if the report only implies or indirectly mentions the asymmetry. What is the correct category for this report?",
+        "prompt": "INSTRUCTION: Carefully examine the German mammography report to identify any mentioned asymmetry and its corresponding clock position (Uhrposition). Select the most precise category from the options: 1 o'clock, 2 o'clock, 3 o'clock, 4 o'clock, 5 o'clock, 6 o'clock, 7 o'clock, 8 o'clock, 9 o'clock, 10 o'clock, 11 o'clock, 12 o'clock, or 'nicht erwähnt' (not mentioned), even if the report only implies or indirectly mentions the asymmetry. What is the correct category for this report? QUESTION: In the following mammography report, what is the clock position of the mentioned asymmetry: [TEXT]? ANSWER: The correct clock position of the mentioned asymmetry in this report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1589,9 +1589,9 @@
     },
     {
         "id": "BL",
-        "topic_input": "Asymmetrie - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der erwähnten Asymmetrie",
         "condition": "BF==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an aysmmetry. Analyze the provided German mammography report to identify the depth at which this asymmetry is located. Possible answers are ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’ oder ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the mentioned asymmetry: [TEXT]? ANSWER: The answer to the question of depth of the asymmetry is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1621,9 +1621,9 @@
     },
     {
         "id": "BM",
-        "topic_input": "Architekturstörung vorhanden",
+        "topic_input": "Vorhandene Architekturstörung erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: Classify the presence of architectural distortion in the provided German mammography report '[TEXT]'. Please carefully read the report and determine if there is any mention of an architectural distortion ('Architekturstörung'). Your answer should be either 'ja' (yes) if an architectural distortion is mentioned or 'nein' (no) if it is not mentioned or if the report does not indicate any distortion. ANSWER:",
+        "prompt": "INSTRUCTION: Classify the presence of architectural distortion in the provided German mammography report. Please carefully read the report and determine if there is any mention of an architectural distortion ('Architekturstörung'). Your answer should be either 'ja' (yes) if an architectural distortion is mentioned or 'nein' (no) if it is not mentioned or if the report does not indicate any distortion. QUESTION: In the following mammography report is there a mentioning of an architectural distorsion: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1637,9 +1637,9 @@
     },
     {
         "id": "BN",
-        "topic_input": "Architekturstörung - Assoziierte Kalzifikation",
+        "topic_input": "Assoziierte Kalzifikation der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "Classify the mammography report '[TEXT]' according to the presence of 'Architekturstörung - Assoziierte Kalzifikation'. Please select one of the following options: 'ja' if the report explicitly mentions an architectural distortion associated with calcification, or 'nein' if it does not. ANSWER:",
+        "prompt": "Classify the German mammography report as either 'ja' (yes) or 'nein' (no) based on the presence of 'Architekturstörung - Assoziierte Kalzifikation', where 'ja' indicates an explicit mention of architectural distortion associated with calcification, and 'nein' indicates no such mention. Consider only the report's explicit statements and avoid inferences. QUESTION: In the following mammography report is there a mentioning of an associated calcification of the mentioned architectural distorsion: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1653,9 +1653,9 @@
     },
     {
         "id": "BO",
-        "topic_input": "Architekturstörung - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report according to the localization depth of architectural distortion. The possible categories are: Anterior, Mitte, Posterior, Retromamillär, Präpektoral, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an architectural distorsion. Analyze the provided German mammography report to identify the depth at which this architectural distorsion is located. Possible answers are ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’ oder ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the mentioned architectural distorsion: [TEXT]? ANSWER: The answer to the question of depth of the architectural distorsion is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1685,9 +1685,9 @@
     },
     {
         "id": "BP",
-        "topic_input": "Architekturstörung - Seite",
+        "topic_input": "Seite der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report based on the side (left or right) where the architectural distortion is present. The possible categories are: links (left), rechts (right), nicht erwähnt (not mentioned). QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an architectural distorsion. Analyze the provided report to determine the side of this architectural distorsion. Possible answers are ‘links’, ‘rechts’ or ‘nicht erwähnt’. QUESTION: In the following mammography report on which side is the mentioned architectural distorsion: [TEXT]? ANSWER: The correct answer to the question on the laterality of the mentioned architectural distorsion in this report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1705,9 +1705,9 @@
     },
     {
         "id": "BQ",
-        "topic_input": "Architekturstörung - Sichtbarkeit auf Ebene",
+        "topic_input": "Sichtbarkeit auf Ebene der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "INSTRUCTION: Classify the report based on the visibility of architectural distortion at different levels. The possible categories are: kraniokaudal, mediolateral oblique, nicht beurteilbar, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: Classify the report based on the visibility of architectural distortion at different levels. The possible categories are: kraniokaudal, mediolateral oblique, nicht beurteilbar, nicht erwähnt. QUESTION: In the following mammography report on which plain is the mentioned architectural distorsion visible: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1725,9 +1725,9 @@
     },
     {
         "id": "BR",
-        "topic_input": "Architekturstörung - Quadrant",
+        "topic_input": "Quadrant der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. Classify the provided report based on the quadrant where the architectural distortion is located. The categories to choose from are: oben aussen, oben innen, unten aussen, unten innen, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: Classify the provided report based on the quadrant where the architectural distortion is located. The categories to choose from are: oben aussen, oben innen, unten aussen, unten innen, nicht erwähnt. QUESTION: In the following mammography report in which quadrant is the mentioned architectural distorsion: [TEXT]? ANSWER: The correct answer is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1753,9 +1753,9 @@
     },
     {
         "id": "BS",
-        "topic_input": "Architekturstörung - Uhrposition",
+        "topic_input": "Uhrposition der erwähnten Architekturstörung",
         "condition": "BM==a",
-        "prompt": "INSTRUCTION: Classify the provided report based on the clock position of architectural distortion. The possible categories are: 1 to 12, nicht erwähnt. QUESTION: The report to be classified is '[TEXT]'. ANSWER: The correct category for this text is",
+        "prompt": "INSTRUCTION: Classify the provided report based on the clock position of architectural distortion. The possible categories are: 1 to 12, nicht erwähnt. QUESTION: In the following mammography report at which clock position is the mentioned architectural distorsion: [TEXT]? ANSWER: The correct category for this text is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1813,9 +1813,9 @@
     },
     {
         "id": "BT",
-        "topic_input": "Intramammärer Lymphknoten vorhanden",
+        "topic_input": "Vorhandener Intramammärer Lymphknoten erwähnt",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report '[TEXT]'. Is there a mentioning of an intramammary lymph node ('Intramammärer Lymphknoten')? Your answer should be yes ('ja') or no ('nein'). If nothing is mentioned, the answer is 'nicht erwähnt'. ANSWER: The correct answer for this report is '",
+        "prompt": "INSTRUCTION: Classify the presence of an intramammary lymph node in the provided German mammography report. Determine whether the report explicitly mentions the presence of an intramammary lymph node, explicitly states its absence, or does not mention it at all. Select 'ja' (yes) if present, 'nein' (no) if absent, or do not select an option if not mentioned. QUESTION: In the following mammography report is there a mentioning of an intramammary lymph node: [TEXT]? ANSWER: The classification result for this report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1831,7 +1831,7 @@
         "id": "BU",
         "topic_input": "Intramammärer Lymphknoten - Seite",
         "condition": "BT==a",
-        "prompt": "CLASSIFICATION TASK: Assign the correct category for the topic 'Intramammärer Lymphknoten - Seite' based on the provided German mammography report. The categories to choose from are: links (left), rechts (right), or nicht erwähnt (not mentioned). What is the correct category for the following report: [TEXT]?",
+        "prompt": "INSTRUCTION: Assign the correct category for the topic 'Intramammärer Lymphknoten - Seite' based on the provided German mammography report. The categories to choose from are: links (left), rechts (right), or nicht erwähnt (not mentioned). QUESTION: In the following mammography report on which side is the mentioned intramammary lymph node: [TEXT]? ANSWER: The correct answer to the question on the laterality of the intramammary lymph node is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1849,9 +1849,9 @@
     },
     {
         "id": "BV",
-        "topic_input": "Intramammärer Lymphknoten - Quadrant",
+        "topic_input": "Quadrant des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
-        "prompt": "Classify the location of the intramammary lymph node mentioned in the given German mammography report. The possible locations are: upper outer, upper inner, lower outer, lower inner, or not mentioned. Classify the text: [TEXT]",
+        "prompt": "INSTRUCTION: Classify the location of the intramammary lymph node mentioned in the given German mammography report. The possible locations are: upper outer, upper inner, lower outer, lower inner, or not mentioned. QUESTION: In the following mammography report in which quadrant is the mentioned intramammary lymph node: [TEXT]? ANSWER: The correct answer to the location of the intramammary lymph node mentioned in the given mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1877,9 +1877,9 @@
     },
     {
         "id": "BW",
-        "topic_input": "Intramammärer Lymphknoten - Uhrposition",
+        "topic_input": "Uhrposition des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
-        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Intramammärer Lymphknoten - Uhrposition' using the following categories: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, nicht erwähnt. Select the most accurate category based on the content of the report.",
+        "prompt": "INSTRUCTION: Classify the provided German mammography report into the primary clock position of an intramammary lymph node, corresponding to the topic 'Intramammärer Lymphknoten - Uhrposition', using the 12-hour clock categories: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, or 'nicht erwähnt' (not mentioned), based on the content of the report, selecting the most accurate category that describes the location of the lymph node. QUESTION: In the following mammography report at which clock position is the mentioned intramammary lymph node: [TEXT]? ANSWER: The correct answer to the clock position of the intramammary lymph node mentioned in the given mammography report is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1937,9 +1937,9 @@
     },
     {
         "id": "BX",
-        "topic_input": "Intramammärer Lymphknoten - Lokalisationstiefe",
+        "topic_input": "Lokalisationstiefe des erwähnten intramammären Lymphknoten",
         "condition": "BT==a",
-        "prompt": "INSTRUCTION: You are a helpful classifier. You select the correct of the possible categories for classifying a piece of text. The topic of the classification is '[TOPIC]'. The allowed categories are '[CATEGORIES]'. QUESTION: The text to be classified is '[TEXT]'. ANSWER: The correct category for this text is '",
+        "prompt": "INSTRUCTION: In the following German mammography report, there is a mentioning of an intramammary lymph node. Analyze the provided German mammography report to identify the depth at which this intramammary lymph node is located. Possible answers are ‘Anterior’, ‘Mitte’, ‘Posterior’, ‘Retromamillär’, ‘Präpektoral’ oder ‘nicht erwähnt’. QUESTION: In the following mammography report, what is the depth of the mentioned intramammary lymph node: [TEXT]? ANSWER: The answer to the question of depth of the intramammary lymph node is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1969,9 +1969,9 @@
     },
     {
         "id": "BY",
-        "topic_input": "Solitär erweiterter Gang vorhanden",
+        "topic_input": "Erwähnter solitär erweiterter Gang vorhanden",
         "condition": "",
-        "prompt": "Classify the German mammography report [TEXT] according to the topic 'Solitär erweiterter Gang vorhanden' and select one of the following categories: ja or nein. Provide the most accurate classification based on the content of the report.",
+        "prompt": "INSTRUCTION: Analyze the provided German mammography report and determine whether a solitary dilated duct is present ('Solitär erweiterter Gang vorhanden'). Choose the most appropriate category based on the report's content: ja (yes) or nein (no). QUESTION: in the following mammography report, is there a mentioning of a solitary dilated duct: [TEXT]? ANSWER: The correct answer for the question on whether a solitary dilated duct is present is ‘",
         "categories": [
             {
                 "id": "a",
@@ -1987,7 +1987,7 @@
         "id": "BZ",
         "topic_input": "BIRADS linke Brust",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. What is the BIRADS score of the left breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. ANSWER: The correct answer for this report is '",
+        "prompt": "INSTRUCTION: Carefully analyze the provided German mammography report. What is the BIRADS score of the left breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. QUESTION: In the following mammography report what is the BIRADS score for the left breast: [TEXT]? ANSWER: The correct answer for the BIRADS score of the left breast is ‘",
         "categories": [
             {
                 "id": "a",
@@ -2043,7 +2043,7 @@
         "id": "CA",
         "topic_input": "BIRADS rechte Brust",
         "condition": "",
-        "prompt": "INSTRUCTION: You are a medical text classifier specializing in German mammography reports. Please carefully analyze the provided report: '[TEXT]'. What is the BIRADS score of the right breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. ANSWER: The correct answer for this report is '",
+        "prompt": "INSTRUCTION: Carefully analyze the provided German mammography report. What is the BIRADS score of the right breast? Possible answers are '0', '1', '2', '3', '4', '4A', '4B', '4C', '5', '6', 'not mentioned', 'unclear'. QUESTION: In the following mammography report what is the BIRADS score for the right breast: [TEXT]? ANSWER: The correct answer for the BIRADS score of the right breast is ‘",
         "categories": [
             {
                 "id": "a",

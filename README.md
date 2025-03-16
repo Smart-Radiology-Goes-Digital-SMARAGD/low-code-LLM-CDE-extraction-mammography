@@ -5,14 +5,13 @@
 This is the GitHub repository hosting the source code and a data files related to the following publication.
 
 ---
-Dennstädt et al.
+Dennstädt F, Fauser S, Cihoric N, Schmerder M, Lombardo P, Cergehtti GM, von Däniken S, Minder T, Meyer J, Chiang L, Gaio R, Lerch L, Filchenko I, Reichenpfader D, Denecke K, Vojvodic C, Tatalovic I, Sander A, Hastings J, Aeberdsold DM, von Tengg-Kobligk H, Nairz K
 
 Title:
-Implementing a resource-light, low-code LLM system for mammography report information retrieval.\
+Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Case Study \
 https://doi.org/XXXXX [Preprint]
 ---
 
-The publication is about using a low-code, resource light LLM-based system for retrieval of categorical data in the form of Common Data Elements (CDEs) from mammography reports
 
 
 ## Content
