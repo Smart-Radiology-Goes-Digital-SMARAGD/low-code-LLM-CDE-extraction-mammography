@@ -7,9 +7,9 @@ This is the GitHub repository hosting the source code and a data files related t
 ---
 
 Title:
-## Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Case Study \
-https://doi.org/XXXXX [Preprint]
+## Implementing a Resource-Light and Low-Code Large Language Model System for Information Extraction from Mammography Reports: A Case Study 
 AUTHORS: Dennstädt F, Fauser S, Cihoric N, Schmerder M, Lombardo P, Cergehtti GM, von Däniken S, Minder T, Meyer J, Chiang L, Gaio R, Lerch L, Filchenko I, Reichenpfader D, Denecke K, Vojvodic C, Tatalovic I, Sander A, Hastings J, Aeberdsold DM, von Tengg-Kobligk H, Nairz K
+https://doi.org/XXXXX [Preprint]
 ---
 
 
